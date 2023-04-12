@@ -9,7 +9,11 @@
 
 summa_birds = int(input("Введите общее количество журавликов, сделанных детьми: "))
 
-petya = summa_birds // 6
-katya = petya * 4
+if (summa_birds % 6) > 0:
+    print("Не могут детишки столько сделать!")
+    print("Введите правильное количество журавликов")
+else:
+    petya = summa_birds // 6
+    katya = petya * 4
 
-print("Петя: {}; Катя: {}; Сережа: {}.".format(petya, katya, petya))
+    print("Петя: %d; Катя: %d; Сережа: %d." % (petya, katya, petya))
