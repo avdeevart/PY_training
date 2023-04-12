@@ -10,6 +10,6 @@ class_A = int(input("Введите кол-во уч-ся в классе А: ")
 class_B = int(input("Введите кол-во уч-ся в классе B: "))
 class_C = int(input("Введите кол-во уч-ся в классе C: "))
 
-table_summ = (class_A + class_B + class_C + 1) // 2
+table_summ = ((class_A + 1) // 2) + ((class_B + 1) // 2) + ((class_C + 1) // 2)
 
 print(table_summ)
