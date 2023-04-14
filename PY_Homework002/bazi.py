@@ -11,3 +11,13 @@ earthly_branch = earthly_branches[(year - 4) % 12]
 
 # Выводим результат
 print("Ваш год рождения по китайскому календарю: {}{}".format(heavenly_stem, earthly_branch))
+
+# ----------------------------------------------------------------------------------------------------------------
+def calculate_heavenly_stem_day(date):
+    day, month, year = map(int, date.split('.'))
+    heavenly_stem = (year % 10) % 5
+    earthly_branch = (year % 12) - 3
+    day_heavenly_stem = (day + earthly_branch + 1) % 10
+    return heavenly_stem, day_heavenly_stem
+
+print(calculate_heavenly_stem_day(30,12,1975))
