@@ -18,7 +18,7 @@ num_input = input("Введите число: ")
 num = int(num_input)
 
 closest_num = None  # переменная для хранения наиболее близкого числа
-closest_distance = float('inf')  # переменная для хранения наименьшего расстояния
+closest_distance = float('inf')  # переменная для хранения наименьшего расстояния,и присваиваем значение бесконечность+
 
 for element in arr:
     distance = abs(element - num)  # расстояние между элементом и заданным числом
