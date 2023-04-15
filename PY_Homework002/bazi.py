@@ -20,4 +20,4 @@ def calculate_heavenly_stem_day(date):
     day_heavenly_stem = (day + earthly_branch + 1) % 10
     return heavenly_stem, day_heavenly_stem
 
-print(calculate_heavenly_stem_day(30,12,1975))
+print(calculate_heavenly_stem_day("{0}.{1}.{2}".format(30, 12, 1975)))
