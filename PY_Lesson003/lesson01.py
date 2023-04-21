@@ -1,5 +1,5 @@
 # сделано через рекурсию!
-def my_factorial(n):
+def my_factorial(n, y="Fill now!"):
     if n == 0:
         return 1
     else:
