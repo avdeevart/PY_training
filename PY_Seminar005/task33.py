@@ -2,20 +2,28 @@
 # Напишите программу, которая заменяет оценки Василия, но наоборот: все максимальные – на минимальные.
 # Input: 5 -> 1 3 3 3 4
 # Output: 1 3 3 3 1
+# ----------------------------------------------------------------------------------------------------------------------------
+import random
 
-grades = input("Вася, вводи оценки:").split()  # получаем оценки в виде строки и разделяем их на список
-grades = [int(x) for x in grades]  # преобразуем каждый элемент списка в целое число
+length = int(input("Введите количество оценок Васи: "))
 
-min_grade = min(grades)  # находим минимальную оценку
-max_grade = max(grades)  # находим максимальную оценку
+# Используем генератор списка для создания списка со случайными числами
+actual_evaluation = [random.randint(1, 5) for i in range(length)]
 
-for i in range(len(grades)):
-    if grades[i] == min_grade:
-        grades[i] = max_grade
-    elif grades[i] == max_grade:
-        grades[i] = min_grade
+print("Вася получил следующие оценки:", actual_evaluation)
 
-grades = [str(x) for x in grades]  # преобразуем каждый элемент списка обратно в строку
-output = " ".join(grades)  # объединяем элементы списка в строку с разделителем " "
+# Поиск максимального значения
+max_value = max(actual_evaluation)
+print("Максимальное значение:", max_value)
 
-print("Вася не гони, вот хакнутые оценки:",output)  # выводим результат
+# Поиск минимального значения
+min_value = min(actual_evaluation)
+print("Минимальное значение:", min_value)
+
+# Замена всех максимальных значений минимальным значением
+max_indices = [i for i, x in enumerate(actual_evaluation) if x == max_value]
+for index in max_indices:
+    actual_evaluation[index] = min_value
+
+print("Измененный список оценок Васи:", actual_evaluation)
+
