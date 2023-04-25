@@ -17,7 +17,12 @@ print("Первый массив:", array1)
 print("Второй массив:", array2)
 
 # Вывести элементы первого массива, которых нет во втором массиве
-unique_elements = set(array1) - set(array2)
-print("Элементы первого массива, которых нет во втором массиве:", list(unique_elements))
+unique_elements = []
+array2_set = set(array2)
+for x in array1:
+    if x not in array2_set and x not in unique_elements:
+        unique_elements.append(x)
+
+print("Элементы первого массива, которых нет во втором массиве:", unique_elements)
 
 
