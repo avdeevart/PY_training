@@ -124,7 +124,7 @@
         "kind": 5,
         "importPath": "Feng_Shui.bazi",
         "description": "Feng_Shui.bazi",
-        "peekOfCode": "place = ephem.Observer()\nplace.lat = lat\nplace.lon = lon\n# Настройка параметров эфемерид\nephem.Sun.compute(place)\n# Расчет натальной карты\nbirthdate = '1980/1/1 0:0:0' # Год, месяц, день, час, минута, секунда рождения\nchart = ephem.constellation(ephem.Date(birthdate))",
+        "peekOfCode": "place = ephem.Observer()\nplace.lat = lat\nplace.lon = lon\n# Создание объекта ephem.Sun\nsun = ephem.Sun()\n# Настройка параметров эфемерид для объекта Sun\nsun.compute(place)\n# Создание объекта ephem.Body для расчета натальной карты\nbody = ephem.FixedBody()\nbody._ra = sun.ra",
         "detail": "Feng_Shui.bazi",
         "documentation": {}
     },
@@ -133,7 +133,7 @@
         "kind": 5,
         "importPath": "Feng_Shui.bazi",
         "description": "Feng_Shui.bazi",
-        "peekOfCode": "place.lat = lat\nplace.lon = lon\n# Настройка параметров эфемерид\nephem.Sun.compute(place)\n# Расчет натальной карты\nbirthdate = '1980/1/1 0:0:0' # Год, месяц, день, час, минута, секунда рождения\nchart = ephem.constellation(ephem.Date(birthdate))",
+        "peekOfCode": "place.lat = lat\nplace.lon = lon\n# Создание объекта ephem.Sun\nsun = ephem.Sun()\n# Настройка параметров эфемерид для объекта Sun\nsun.compute(place)\n# Создание объекта ephem.Body для расчета натальной карты\nbody = ephem.FixedBody()\nbody._ra = sun.ra\nbody._dec = sun.dec",
         "detail": "Feng_Shui.bazi",
         "documentation": {}
     },
@@ -142,7 +142,43 @@
         "kind": 5,
         "importPath": "Feng_Shui.bazi",
         "description": "Feng_Shui.bazi",
-        "peekOfCode": "place.lon = lon\n# Настройка параметров эфемерид\nephem.Sun.compute(place)\n# Расчет натальной карты\nbirthdate = '1980/1/1 0:0:0' # Год, месяц, день, час, минута, секунда рождения\nchart = ephem.constellation(ephem.Date(birthdate))",
+        "peekOfCode": "place.lon = lon\n# Создание объекта ephem.Sun\nsun = ephem.Sun()\n# Настройка параметров эфемерид для объекта Sun\nsun.compute(place)\n# Создание объекта ephem.Body для расчета натальной карты\nbody = ephem.FixedBody()\nbody._ra = sun.ra\nbody._dec = sun.dec\n# Расчет натальной карты",
+        "detail": "Feng_Shui.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "sun",
+        "kind": 5,
+        "importPath": "Feng_Shui.bazi",
+        "description": "Feng_Shui.bazi",
+        "peekOfCode": "sun = ephem.Sun()\n# Настройка параметров эфемерид для объекта Sun\nsun.compute(place)\n# Создание объекта ephem.Body для расчета натальной карты\nbody = ephem.FixedBody()\nbody._ra = sun.ra\nbody._dec = sun.dec\n# Расчет натальной карты\n# Вызов метода compute() перед использованием body в ephem.constellation()\nbody.compute(place)",
+        "detail": "Feng_Shui.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "body",
+        "kind": 5,
+        "importPath": "Feng_Shui.bazi",
+        "description": "Feng_Shui.bazi",
+        "peekOfCode": "body = ephem.FixedBody()\nbody._ra = sun.ra\nbody._dec = sun.dec\n# Расчет натальной карты\n# Вызов метода compute() перед использованием body в ephem.constellation()\nbody.compute(place)\n# Год, месяц, день, час, минута, секунда рождения\nbirthdate = '1980/1/1 0:0:0'\nchart = ephem.constellation(body)\nprint(chart)",
+        "detail": "Feng_Shui.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "body._ra",
+        "kind": 5,
+        "importPath": "Feng_Shui.bazi",
+        "description": "Feng_Shui.bazi",
+        "peekOfCode": "body._ra = sun.ra\nbody._dec = sun.dec\n# Расчет натальной карты\n# Вызов метода compute() перед использованием body в ephem.constellation()\nbody.compute(place)\n# Год, месяц, день, час, минута, секунда рождения\nbirthdate = '1980/1/1 0:0:0'\nchart = ephem.constellation(body)\nprint(chart)",
+        "detail": "Feng_Shui.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "body._dec",
+        "kind": 5,
+        "importPath": "Feng_Shui.bazi",
+        "description": "Feng_Shui.bazi",
+        "peekOfCode": "body._dec = sun.dec\n# Расчет натальной карты\n# Вызов метода compute() перед использованием body в ephem.constellation()\nbody.compute(place)\n# Год, месяц, день, час, минута, секунда рождения\nbirthdate = '1980/1/1 0:0:0'\nchart = ephem.constellation(body)\nprint(chart)",
         "detail": "Feng_Shui.bazi",
         "documentation": {}
     },
@@ -151,7 +187,7 @@
         "kind": 5,
         "importPath": "Feng_Shui.bazi",
         "description": "Feng_Shui.bazi",
-        "peekOfCode": "birthdate = '1980/1/1 0:0:0' # Год, месяц, день, час, минута, секунда рождения\nchart = ephem.constellation(ephem.Date(birthdate))",
+        "peekOfCode": "birthdate = '1980/1/1 0:0:0'\nchart = ephem.constellation(body)\nprint(chart)",
         "detail": "Feng_Shui.bazi",
         "documentation": {}
     },
@@ -160,7 +196,7 @@
         "kind": 5,
         "importPath": "Feng_Shui.bazi",
         "description": "Feng_Shui.bazi",
-        "peekOfCode": "chart = ephem.constellation(ephem.Date(birthdate))",
+        "peekOfCode": "chart = ephem.constellation(body)\nprint(chart)",
         "detail": "Feng_Shui.bazi",
         "documentation": {}
     },
@@ -333,6 +369,24 @@
         "description": "Feng_Shui.EBMounth",
         "peekOfCode": "earthly_branch_num = num_months % len(earthly_branches)\n# выводим результат\nprint('Земная ветвь для {}-го месяца {} года: {}'.format(month, year, earthly_branches[earthly_branch_num]))",
         "detail": "Feng_Shui.EBMounth",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_flying_stars",
+        "kind": 2,
+        "importPath": "Feng_Shui.Fly_Stars",
+        "description": "Feng_Shui.Fly_Stars",
+        "peekOfCode": "def calculate_flying_stars(year, animal_sign):\n    # Определяем элемент на основе номера знака животного\n    element = animal_sign % 5\n    element_name = elements[element]\n    # Расчет часовой звезды\n    hour_star = (4 - element) % 9 + 1\n    # Расчет дневной звезды\n    day_star = (10 - element) % 9 + 1\n    # Расчет месячной звезды\n    month_star = (7 - element) % 9 + 1",
+        "detail": "Feng_Shui.Fly_Stars",
+        "documentation": {}
+    },
+    {
+        "label": "elements",
+        "kind": 5,
+        "importPath": "Feng_Shui.Fly_Stars",
+        "description": "Feng_Shui.Fly_Stars",
+        "peekOfCode": "elements = {\n    0: \"металл\",\n    1: \"вода\",\n    2: \"дерево\",\n    3: \"огонь\",\n    4: \"земля\"\n}\ndef calculate_flying_stars(year, animal_sign):\n    # Определяем элемент на основе номера знака животного\n    element = animal_sign % 5",
+        "detail": "Feng_Shui.Fly_Stars",
         "documentation": {}
     },
     {
