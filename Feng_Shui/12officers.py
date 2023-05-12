@@ -48,4 +48,4 @@ input2 = "Кролик"
 output = calculate_output(input1, input2)
 
 output_value = output_values[output]
-print(output,output_value) 
+print(output,output_value)

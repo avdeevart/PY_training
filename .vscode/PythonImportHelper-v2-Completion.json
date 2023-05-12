@@ -1,14 +1,5 @@
 [
     {
-        "label": "ephem",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "ephem",
-        "description": "ephem",
-        "detail": "ephem",
-        "documentation": {}
-    },
-    {
         "label": "datetime",
         "kind": 6,
         "isExtraImport": true,
@@ -120,83 +111,110 @@
         "documentation": {}
     },
     {
-        "label": "place",
+        "label": "calculate_output",
+        "kind": 2,
+        "importPath": "Feng_Shui.12officers",
+        "description": "Feng_Shui.12officers",
+        "peekOfCode": "def calculate_output(input1, input2):\n    animal_values = {\n        \"Тигр\": 1,\n        \"Кролик\": 2,\n        \"Дракон\": 3,\n        \"Змея\": 4,\n        \"Лошадь\": 5,\n        \"Коза\": 6,\n        \"Обезьяна\": 7,\n        \"Петух\": 8,",
+        "detail": "Feng_Shui.12officers",
+        "documentation": {}
+    },
+    {
+        "label": "output_values",
         "kind": 5,
+        "importPath": "Feng_Shui.12officers",
+        "description": "Feng_Shui.12officers",
+        "peekOfCode": "output_values = {\n    1: \"Установление\",\n    2: \"Удаление\",\n    3: \"Наполнение\",\n    4: \"Баланс\",\n    5: \"Стабильность\",\n    6: \"Удержание\",\n    7: \"Разрушение\",\n    8: \"Опасность\",\n    9: \"Успех\",",
+        "detail": "Feng_Shui.12officers",
+        "documentation": {}
+    },
+    {
+        "label": "input1",
+        "kind": 5,
+        "importPath": "Feng_Shui.12officers",
+        "description": "Feng_Shui.12officers",
+        "peekOfCode": "input1 = \"Обезьяна\"\ninput2 = \"Кролик\"\noutput = calculate_output(input1, input2)\noutput_value = output_values[output]\nprint(output,output_value)",
+        "detail": "Feng_Shui.12officers",
+        "documentation": {}
+    },
+    {
+        "label": "input2",
+        "kind": 5,
+        "importPath": "Feng_Shui.12officers",
+        "description": "Feng_Shui.12officers",
+        "peekOfCode": "input2 = \"Кролик\"\noutput = calculate_output(input1, input2)\noutput_value = output_values[output]\nprint(output,output_value)",
+        "detail": "Feng_Shui.12officers",
+        "documentation": {}
+    },
+    {
+        "label": "output",
+        "kind": 5,
+        "importPath": "Feng_Shui.12officers",
+        "description": "Feng_Shui.12officers",
+        "peekOfCode": "output = calculate_output(input1, input2)\noutput_value = output_values[output]\nprint(output,output_value)",
+        "detail": "Feng_Shui.12officers",
+        "documentation": {}
+    },
+    {
+        "label": "output_value",
+        "kind": 5,
+        "importPath": "Feng_Shui.12officers",
+        "description": "Feng_Shui.12officers",
+        "peekOfCode": "output_value = output_values[output]\nprint(output,output_value)",
+        "detail": "Feng_Shui.12officers",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_output",
+        "kind": 2,
         "importPath": "Feng_Shui.bazi",
         "description": "Feng_Shui.bazi",
-        "peekOfCode": "place = ephem.Observer()\nplace.lat = lat\nplace.lon = lon\n# Создание объекта ephem.Sun\nsun = ephem.Sun()\n# Настройка параметров эфемерид для объекта Sun\nsun.compute(place)\n# Создание объекта ephem.Body для расчета натальной карты\nbody = ephem.FixedBody()\nbody._ra = sun.ra",
+        "peekOfCode": "def calculate_output(input1, input2):\n    animal_values = {\n        \"Тигр\": 1,\n        \"Кролик\": 2,\n        \"Дракон\": 3,\n        \"Змея\": 4,\n        \"Лошадь\": 5,\n        \"Коза\": 6,\n        \"Обезьяна\": 7,\n        \"Петух\": 8,",
         "detail": "Feng_Shui.bazi",
         "documentation": {}
     },
     {
-        "label": "place.lat",
+        "label": "output_values",
         "kind": 5,
         "importPath": "Feng_Shui.bazi",
         "description": "Feng_Shui.bazi",
-        "peekOfCode": "place.lat = lat\nplace.lon = lon\n# Создание объекта ephem.Sun\nsun = ephem.Sun()\n# Настройка параметров эфемерид для объекта Sun\nsun.compute(place)\n# Создание объекта ephem.Body для расчета натальной карты\nbody = ephem.FixedBody()\nbody._ra = sun.ra\nbody._dec = sun.dec",
+        "peekOfCode": "output_values = {\n    1: \"Установление\",\n    2: \"Удаление\",\n    3: \"Наполнение\",\n    4: \"Баланс\",\n    5: \"Стабильность\",\n    6: \"Удержание\",\n    7: \"Разрушение\",\n    8: \"Опасность\",\n    9: \"Успех\",",
         "detail": "Feng_Shui.bazi",
         "documentation": {}
     },
     {
-        "label": "place.lon",
+        "label": "input1",
         "kind": 5,
         "importPath": "Feng_Shui.bazi",
         "description": "Feng_Shui.bazi",
-        "peekOfCode": "place.lon = lon\n# Создание объекта ephem.Sun\nsun = ephem.Sun()\n# Настройка параметров эфемерид для объекта Sun\nsun.compute(place)\n# Создание объекта ephem.Body для расчета натальной карты\nbody = ephem.FixedBody()\nbody._ra = sun.ra\nbody._dec = sun.dec\n# Расчет натальной карты",
+        "peekOfCode": "input1 = \"Обезьяна\"\ninput2 = \"Кролик\"\noutput = calculate_output(input1, input2)\noutput_value = output_values[output]\nprint(output,output_value)",
         "detail": "Feng_Shui.bazi",
         "documentation": {}
     },
     {
-        "label": "sun",
+        "label": "input2",
         "kind": 5,
         "importPath": "Feng_Shui.bazi",
         "description": "Feng_Shui.bazi",
-        "peekOfCode": "sun = ephem.Sun()\n# Настройка параметров эфемерид для объекта Sun\nsun.compute(place)\n# Создание объекта ephem.Body для расчета натальной карты\nbody = ephem.FixedBody()\nbody._ra = sun.ra\nbody._dec = sun.dec\n# Расчет натальной карты\n# Вызов метода compute() перед использованием body в ephem.constellation()\nbody.compute(place)",
+        "peekOfCode": "input2 = \"Кролик\"\noutput = calculate_output(input1, input2)\noutput_value = output_values[output]\nprint(output,output_value)",
         "detail": "Feng_Shui.bazi",
         "documentation": {}
     },
     {
-        "label": "body",
+        "label": "output",
         "kind": 5,
         "importPath": "Feng_Shui.bazi",
         "description": "Feng_Shui.bazi",
-        "peekOfCode": "body = ephem.FixedBody()\nbody._ra = sun.ra\nbody._dec = sun.dec\n# Расчет натальной карты\n# Вызов метода compute() перед использованием body в ephem.constellation()\nbody.compute(place)\n# Год, месяц, день, час, минута, секунда рождения\nbirthdate = '1980/1/1 0:0:0'\nchart = ephem.constellation(body)\nprint(chart)",
+        "peekOfCode": "output = calculate_output(input1, input2)\noutput_value = output_values[output]\nprint(output,output_value)",
         "detail": "Feng_Shui.bazi",
         "documentation": {}
     },
     {
-        "label": "body._ra",
+        "label": "output_value",
         "kind": 5,
         "importPath": "Feng_Shui.bazi",
         "description": "Feng_Shui.bazi",
-        "peekOfCode": "body._ra = sun.ra\nbody._dec = sun.dec\n# Расчет натальной карты\n# Вызов метода compute() перед использованием body в ephem.constellation()\nbody.compute(place)\n# Год, месяц, день, час, минута, секунда рождения\nbirthdate = '1980/1/1 0:0:0'\nchart = ephem.constellation(body)\nprint(chart)",
-        "detail": "Feng_Shui.bazi",
-        "documentation": {}
-    },
-    {
-        "label": "body._dec",
-        "kind": 5,
-        "importPath": "Feng_Shui.bazi",
-        "description": "Feng_Shui.bazi",
-        "peekOfCode": "body._dec = sun.dec\n# Расчет натальной карты\n# Вызов метода compute() перед использованием body в ephem.constellation()\nbody.compute(place)\n# Год, месяц, день, час, минута, секунда рождения\nbirthdate = '1980/1/1 0:0:0'\nchart = ephem.constellation(body)\nprint(chart)",
-        "detail": "Feng_Shui.bazi",
-        "documentation": {}
-    },
-    {
-        "label": "birthdate",
-        "kind": 5,
-        "importPath": "Feng_Shui.bazi",
-        "description": "Feng_Shui.bazi",
-        "peekOfCode": "birthdate = '1980/1/1 0:0:0'\nchart = ephem.constellation(body)\nprint(chart)",
-        "detail": "Feng_Shui.bazi",
-        "documentation": {}
-    },
-    {
-        "label": "chart",
-        "kind": 5,
-        "importPath": "Feng_Shui.bazi",
-        "description": "Feng_Shui.bazi",
-        "peekOfCode": "chart = ephem.constellation(body)\nprint(chart)",
+        "peekOfCode": "output_value = output_values[output]\nprint(output,output_value)",
         "detail": "Feng_Shui.bazi",
         "documentation": {}
     },
