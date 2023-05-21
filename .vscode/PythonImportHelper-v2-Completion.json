@@ -1182,6 +1182,24 @@
         "documentation": {}
     },
     {
+        "label": "print_operation_table",
+        "kind": 2,
+        "importPath": "PY_Homework007.task36",
+        "description": "PY_Homework007.task36",
+        "peekOfCode": "def print_operation_table(operation, num_rows=6, num_columns=6):\n    # Генерируем список заголовков столбцов и выравниваем их по правому краю каждого столбца\n    column_headers = [f\"{column:>4d}\" for column in range(1, num_columns + 1)]\n    # Печатаем заголовок таблицы\n    print(\"    \", *column_headers)\n    # Печатаем разделительную линию\n    print(\"   +\" + \"-\" * (5 * num_columns))\n    # Печатаем содержимое таблицы\n    for row in range(1, num_rows + 1):\n        # Генерируем список значений для текущей строки",
+        "detail": "PY_Homework007.task36",
+        "documentation": {}
+    },
+    {
+        "label": "multiply",
+        "kind": 5,
+        "importPath": "PY_Homework007.task36",
+        "description": "PY_Homework007.task36",
+        "peekOfCode": "multiply = lambda x, y: x * y\n# Вывод таблицы умножения\nprint_operation_table(multiply)",
+        "detail": "PY_Homework007.task36",
+        "documentation": {}
+    },
+    {
         "label": "my_factorial",
         "kind": 2,
         "importPath": "PY_Lesson003.lesson01",
