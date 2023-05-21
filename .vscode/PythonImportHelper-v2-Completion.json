@@ -76,6 +76,15 @@
         "documentation": {}
     },
     {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "math",
         "description": "math",
@@ -1182,6 +1191,69 @@
         "documentation": {}
     },
     {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "PY_Lesson004.lesson4_01",
+        "description": "PY_Lesson004.lesson4_01",
+        "peekOfCode": "numbers = [1, 2, 3, 5, 8, 15, 23, 38]\n# Фильтруем список и выбираем только четные числа\nfiltered_numbers = filter(lambda x: x % 2 == 0, numbers)\n# Применяем лямбда-функцию для составления списка пар (число, квадрат числа)\nresult = map(lambda x: (x, x**2), filtered_numbers)\n# Преобразуем результат в список\nresult_list = list(result)\nprint(result_list)  # Вывод: [(2, 4), (8, 64), (38, 1444)]",
+        "detail": "PY_Lesson004.lesson4_01",
+        "documentation": {}
+    },
+    {
+        "label": "filtered_numbers",
+        "kind": 5,
+        "importPath": "PY_Lesson004.lesson4_01",
+        "description": "PY_Lesson004.lesson4_01",
+        "peekOfCode": "filtered_numbers = filter(lambda x: x % 2 == 0, numbers)\n# Применяем лямбда-функцию для составления списка пар (число, квадрат числа)\nresult = map(lambda x: (x, x**2), filtered_numbers)\n# Преобразуем результат в список\nresult_list = list(result)\nprint(result_list)  # Вывод: [(2, 4), (8, 64), (38, 1444)]",
+        "detail": "PY_Lesson004.lesson4_01",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "PY_Lesson004.lesson4_01",
+        "description": "PY_Lesson004.lesson4_01",
+        "peekOfCode": "result = map(lambda x: (x, x**2), filtered_numbers)\n# Преобразуем результат в список\nresult_list = list(result)\nprint(result_list)  # Вывод: [(2, 4), (8, 64), (38, 1444)]",
+        "detail": "PY_Lesson004.lesson4_01",
+        "documentation": {}
+    },
+    {
+        "label": "result_list",
+        "kind": 5,
+        "importPath": "PY_Lesson004.lesson4_01",
+        "description": "PY_Lesson004.lesson4_01",
+        "peekOfCode": "result_list = list(result)\nprint(result_list)  # Вывод: [(2, 4), (8, 64), (38, 1444)]",
+        "detail": "PY_Lesson004.lesson4_01",
+        "documentation": {}
+    },
+    {
+        "label": "numbers_str",
+        "kind": 5,
+        "importPath": "PY_Lesson004.lesson4_02",
+        "description": "PY_Lesson004.lesson4_02",
+        "peekOfCode": "numbers_str = input(\"Введите набор чисел, разделенных пробелами: \")\n# Разбиваем строку на список строк, используя пробел как разделитель\nnumbers_list_str = numbers_str.split()\n# Преобразуем список строк в список чисел\nnumbers_list = list(map(lambda x: int(x), numbers_list_str))\nprint(numbers_list)",
+        "detail": "PY_Lesson004.lesson4_02",
+        "documentation": {}
+    },
+    {
+        "label": "numbers_list_str",
+        "kind": 5,
+        "importPath": "PY_Lesson004.lesson4_02",
+        "description": "PY_Lesson004.lesson4_02",
+        "peekOfCode": "numbers_list_str = numbers_str.split()\n# Преобразуем список строк в список чисел\nnumbers_list = list(map(lambda x: int(x), numbers_list_str))\nprint(numbers_list)",
+        "detail": "PY_Lesson004.lesson4_02",
+        "documentation": {}
+    },
+    {
+        "label": "numbers_list",
+        "kind": 5,
+        "importPath": "PY_Lesson004.lesson4_02",
+        "description": "PY_Lesson004.lesson4_02",
+        "peekOfCode": "numbers_list = list(map(lambda x: int(x), numbers_list_str))\nprint(numbers_list)",
+        "detail": "PY_Lesson004.lesson4_02",
+        "documentation": {}
+    },
+    {
         "label": "norma",
         "kind": 5,
         "importPath": "PY_Seminar001.task001",
@@ -1701,6 +1773,78 @@
         "description": "PY_Seminar006.task45",
         "peekOfCode": "found_pairs = set()\nfor i in range(1, k+1):\n    x = sum_of_divisors(i)\n    if x > i and sum_of_divisors(x) == i:\n        found_pairs.add((i, x))\nif len(found_pairs) == 0:\n    print(\"Дружественные числа не найдены.\")\nelse:\n    print(\"Дружественные числа:\")\n    for pair in found_pairs:",
         "detail": "PY_Seminar006.task45",
+        "documentation": {}
+    },
+    {
+        "label": "values",
+        "kind": 5,
+        "importPath": "PY_Seminar007.task47",
+        "description": "PY_Seminar007.task47",
+        "peekOfCode": "values = [1, 23, 42, 'asdfg']\n# Лямбда-выражение, которое возвращает значение без преобразований\ntransformation = lambda x: x\n# Применяем лямбда-выражение к списку значений\ntransformed_values = list(map(transformation, values))\n# Проверяем, равны ли исходный список и преобразованный список\nif values == transformed_values:\n    print('ok')\nelse:\n    print('fail')",
+        "detail": "PY_Seminar007.task47",
+        "documentation": {}
+    },
+    {
+        "label": "transformation",
+        "kind": 5,
+        "importPath": "PY_Seminar007.task47",
+        "description": "PY_Seminar007.task47",
+        "peekOfCode": "transformation = lambda x: x\n# Применяем лямбда-выражение к списку значений\ntransformed_values = list(map(transformation, values))\n# Проверяем, равны ли исходный список и преобразованный список\nif values == transformed_values:\n    print('ok')\nelse:\n    print('fail')",
+        "detail": "PY_Seminar007.task47",
+        "documentation": {}
+    },
+    {
+        "label": "transformed_values",
+        "kind": 5,
+        "importPath": "PY_Seminar007.task47",
+        "description": "PY_Seminar007.task47",
+        "peekOfCode": "transformed_values = list(map(transformation, values))\n# Проверяем, равны ли исходный список и преобразованный список\nif values == transformed_values:\n    print('ok')\nelse:\n    print('fail')",
+        "detail": "PY_Seminar007.task47",
+        "documentation": {}
+    },
+    {
+        "label": "find_farthest_orbit",
+        "kind": 2,
+        "importPath": "PY_Seminar007.task49",
+        "description": "PY_Seminar007.task49",
+        "peekOfCode": "def find_farthest_orbit(list_of_orbits):\n    # Фильтруем орбиты с одинаковыми полуосями\n    filtered_orbits = filter(lambda orbit: orbit[0] != orbit[1], list_of_orbits)\n    # Вычисляем площади всех орбит и выбираем орбиту с наибольшей площадью\n    farthest_orbit = max(filtered_orbits, key=lambda orbit: orbit[0] * orbit[1])\n    return farthest_orbit\norbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]\nresult = find_farthest_orbit(orbits)\nprint(*result)",
+        "detail": "PY_Seminar007.task49",
+        "documentation": {}
+    },
+    {
+        "label": "orbits",
+        "kind": 5,
+        "importPath": "PY_Seminar007.task49",
+        "description": "PY_Seminar007.task49",
+        "peekOfCode": "orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]\nresult = find_farthest_orbit(orbits)\nprint(*result)",
+        "detail": "PY_Seminar007.task49",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "PY_Seminar007.task49",
+        "description": "PY_Seminar007.task49",
+        "peekOfCode": "result = find_farthest_orbit(orbits)\nprint(*result)",
+        "detail": "PY_Seminar007.task49",
+        "documentation": {}
+    },
+    {
+        "label": "same_by",
+        "kind": 2,
+        "importPath": "PY_Seminar007.task51",
+        "description": "PY_Seminar007.task51",
+        "peekOfCode": "def same_by(characteristic, objects):\n    # Создаем множество для хранения уникальных значений характеристики\n    unique_values = set(characteristic(obj) for obj in objects)\n    # Если множество содержит только одно значение, значит все объекты имеют одинаковую характеристику\n    return len(unique_values) == 1\nvalues = [0, 2, 10, 6]\nif same_by(lambda x: x % 2, values):\n    print('same')\nelse:\n    print('different')",
+        "detail": "PY_Seminar007.task51",
+        "documentation": {}
+    },
+    {
+        "label": "values",
+        "kind": 5,
+        "importPath": "PY_Seminar007.task51",
+        "description": "PY_Seminar007.task51",
+        "peekOfCode": "values = [0, 2, 10, 6]\nif same_by(lambda x: x % 2, values):\n    print('same')\nelse:\n    print('different')",
+        "detail": "PY_Seminar007.task51",
         "documentation": {}
     }
 ]
