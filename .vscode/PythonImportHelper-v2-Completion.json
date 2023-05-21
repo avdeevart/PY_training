@@ -1155,6 +1155,33 @@
         "documentation": {}
     },
     {
+        "label": "check_rhythm",
+        "kind": 2,
+        "importPath": "PY_Homework007.task34",
+        "description": "PY_Homework007.task34",
+        "peekOfCode": "def check_rhythm(poem):\n    # Разделяем стихотворение на отдельные слова\n    words = poem.split()\n    # Функция для подсчета числа гласных букв в слове\n    count_vowels = lambda word: sum(1 for letter in word if letter.lower() in 'аеёиоуыэюя')\n    # Вычисляем количество гласных в каждом слове с помощью функции map и лямбда-функции\n    vowel_counts = list(map(count_vowels, words))\n    # Проверяем, все ли количество гласных одинаковое\n    if len(set(vowel_counts)) == 1:\n        return \"Парам пам-пам\"  # Рифма присутствует",
+        "detail": "PY_Homework007.task34",
+        "documentation": {}
+    },
+    {
+        "label": "poem",
+        "kind": 5,
+        "importPath": "PY_Homework007.task34",
+        "description": "PY_Homework007.task34",
+        "peekOfCode": "poem = input(\"Введите стихотворение: \")\n# Проверка ритма и вывод результата\nresult = check_rhythm(poem)\nprint(result)",
+        "detail": "PY_Homework007.task34",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "PY_Homework007.task34",
+        "description": "PY_Homework007.task34",
+        "peekOfCode": "result = check_rhythm(poem)\nprint(result)",
+        "detail": "PY_Homework007.task34",
+        "documentation": {}
+    },
+    {
         "label": "my_factorial",
         "kind": 2,
         "importPath": "PY_Lesson003.lesson01",
