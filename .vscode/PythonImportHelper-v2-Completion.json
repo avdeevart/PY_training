@@ -42,6 +42,51 @@
         "documentation": {}
     },
     {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "model",
+        "description": "model",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "view",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "view",
+        "description": "view",
+        "detail": "view",
+        "documentation": {}
+    },
+    {
+        "label": "controller",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "controller",
+        "description": "controller",
+        "detail": "controller",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
         "label": "random",
         "kind": 6,
         "isExtraImport": true,
@@ -630,6 +675,267 @@
         "description": "Feng_Shui.HPMounth",
         "peekOfCode": "heavenly_stem = heavenly_stems[heavenly_stem_index]\nprint(\"Небесный ствол для {}-го месяца {} года: {} ({})\".format(month, year, heavenly_stem[0], heavenly_stem[1]))",
         "detail": "Feng_Shui.HPMounth",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.controller",
+        "description": "PhoneBook.MVC.controller",
+        "peekOfCode": "def main():\n    # Определение пути к файлу контактов\n    file_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"contacts.csv\")\n    # Загрузка контактов из файла\n    contacts = model.load_contacts(file_name)\n    while True:\n        # Вывод меню с возможными действиями\n        print(\"1. Вывести все контакты\")\n        print(\"2. Добавить контакт\")\n        print(\"3. Сохранить контакты\")",
+        "detail": "PhoneBook.MVC.controller",
+        "documentation": {}
+    },
+    {
+        "label": "load_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.model",
+        "description": "PhoneBook.MVC.model",
+        "peekOfCode": "def load_contacts(file_name):\n    contacts = []\n    try:\n        with open(file_name, \"r\", encoding=\"utf-8\") as file:\n            reader = csv.reader(file)\n            for row in reader:\n                contacts.append(row)\n    except FileNotFoundError:\n        pass\n    return contacts",
+        "detail": "PhoneBook.MVC.model",
+        "documentation": {}
+    },
+    {
+        "label": "save_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.model",
+        "description": "PhoneBook.MVC.model",
+        "peekOfCode": "def save_contacts(file_name, contacts):\n    with open(file_name, \"w\", encoding=\"utf-8\", newline=\"\") as file:\n        writer = csv.writer(file)\n        writer.writerows(contacts)\n# Функция для поиска контактов по ключевому слову\ndef search_contacts(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = [contact for contact in contacts if any(field.lower().startswith(keyword) for field in contact)]\n    return found_contacts",
+        "detail": "PhoneBook.MVC.model",
+        "documentation": {}
+    },
+    {
+        "label": "search_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.model",
+        "description": "PhoneBook.MVC.model",
+        "peekOfCode": "def search_contacts(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = [contact for contact in contacts if any(field.lower().startswith(keyword) for field in contact)]\n    return found_contacts",
+        "detail": "PhoneBook.MVC.model",
+        "documentation": {}
+    },
+    {
+        "label": "display_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.view",
+        "description": "PhoneBook.MVC.view",
+        "peekOfCode": "def display_contacts(contacts):\n    if not contacts:\n        print(\"Нет доступных контактов.\")\n    else:\n        # Вывод заголовка таблицы контактов\n        print(\"{:<4} {:<14} {:<12} {:<14} {:<18}\".format(\"№\", \"Фамилия\", \"Имя\", \"Отчество\", \"Номер телефона\"))\n        print(\"-\" * 70)\n        # Вывод каждого контакта в форматированной таблице\n        for i, contact in enumerate(contacts, start=1):\n            last_name, first_name, patronymic, phone_number = contact",
+        "detail": "PhoneBook.MVC.view",
+        "documentation": {}
+    },
+    {
+        "label": "add_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.view",
+        "description": "PhoneBook.MVC.view",
+        "peekOfCode": "def add_contact(contacts):\n    last_name = input(\"Введите фамилию: \")\n    first_name = input(\"Введите имя: \")\n    patronymic = input(\"Введите отчество: \")\n    phone_number = input(\"Введите номер телефона: \")\n    contact = [last_name, first_name, patronymic, phone_number]\n    contacts.append(contact)\n    print(\"Контакт успешно добавлен.\")\n# Функция для редактирования контакта\ndef edit_contact(contacts, keyword):",
+        "detail": "PhoneBook.MVC.view",
+        "documentation": {}
+    },
+    {
+        "label": "edit_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.view",
+        "description": "PhoneBook.MVC.view",
+        "peekOfCode": "def edit_contact(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = [(i, contact) for i, contact in enumerate(contacts) if any(field.lower().startswith(keyword) for field in contact)]\n    if not found_contacts:\n        print(\"Контакты не найдены.\")\n    else:\n        print(\"Найденные контакты:\")\n        display_contacts([contact for _, contact in found_contacts])\n        choice = input(\"Введите номер контакта для редактирования: \")\n        if not choice.isdigit() or int(choice) < 1 or int(choice) > len(found_contacts):",
+        "detail": "PhoneBook.MVC.view",
+        "documentation": {}
+    },
+    {
+        "label": "delete_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.view",
+        "description": "PhoneBook.MVC.view",
+        "peekOfCode": "def delete_contact(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = [(i, contact) for i, contact in enumerate(contacts) if any(field.lower().startswith(keyword) for field in contact)]\n    if not found_contacts:\n        print(\"Контакты не найдены.\")\n    else:\n        print(\"Найденные контакты:\")\n        display_contacts([contact for _, contact in found_contacts])\n        choice = input(\"Введите номер контакта для удаления: \")\n        if not choice.isdigit() or int(choice) < 1 or int(choice) > len(found_contacts):",
+        "detail": "PhoneBook.MVC.view",
+        "documentation": {}
+    },
+    {
+        "label": "load_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBook",
+        "description": "PhoneBook.PhoneBook",
+        "peekOfCode": "def load_contacts(file_name):\n    \"\"\"\n    Загружает контакты из файла.\n    Параметры:\n        file_name (str): Имя файла.\n    Возвращает:\n        list: Список контактов.\n    \"\"\"\n    contacts = []\n    try:",
+        "detail": "PhoneBook.PhoneBook",
+        "documentation": {}
+    },
+    {
+        "label": "save_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBook",
+        "description": "PhoneBook.PhoneBook",
+        "peekOfCode": "def save_contacts(file_name, contacts):\n    \"\"\"\n    Сохраняет контакты в файле.\n    Параметры:\n        file_name (str): Имя файла.\n        contacts (list): Список контактов.\n    \"\"\"\n    with open(file_name, \"w\", encoding=\"utf-8\", newline=\"\") as file:\n        writer = csv.writer(file)\n        writer.writerows(contacts)",
+        "detail": "PhoneBook.PhoneBook",
+        "documentation": {}
+    },
+    {
+        "label": "display_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBook",
+        "description": "PhoneBook.PhoneBook",
+        "peekOfCode": "def display_contacts(contacts):\n    \"\"\"\n    Выводит контакты на экран в формате телефонного справочника.\n    Параметры:\n        contacts (list): Список контактов.\n    \"\"\"\n    if not contacts:\n        print(\"Нет доступных контактов.\")\n    else:\n        print(\"{:<14} {:<12} {:<14} {:<18}\".format(\"Фамилия\", \"Имя\", \"Отчество\", \"Номер телефона\"))",
+        "detail": "PhoneBook.PhoneBook",
+        "documentation": {}
+    },
+    {
+        "label": "search_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBook",
+        "description": "PhoneBook.PhoneBook",
+        "peekOfCode": "def search_contacts(contacts, keyword):\n    \"\"\"\n    Ищет контакты по заданному ключевому слову.\n    Параметры:\n        contacts (list): Список контактов.\n        keyword (str): Ключевое слово для поиска.\n    Возвращает:\n        list: Список найденных контактов.\n    \"\"\"\n    keyword = keyword.lower()",
+        "detail": "PhoneBook.PhoneBook",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBook",
+        "description": "PhoneBook.PhoneBook",
+        "peekOfCode": "def main():\n    file_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"contacts.csv\")\n    contacts = load_contacts(file_name)\n    while True:\n        print(\"1. Вывести все контакты\")\n        print(\"2. Добавить контакт\")\n        print(\"3. Сохранить контакты\")\n        print(\"4. Поиск контактов\")\n        print(\"5. Выйти\")\n        choice = input(\"Выберите действие (1-5): \")",
+        "detail": "PhoneBook.PhoneBook",
+        "documentation": {}
+    },
+    {
+        "label": "load_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def load_contacts(file_name):\n    contacts = []\n    try:\n        with open(file_name, \"r\", encoding=\"utf-8\") as file:\n            reader = csv.reader(file)\n            for row in reader:\n                contacts.append(row)\n    except FileNotFoundError:\n        pass\n    return contacts",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "save_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def save_contacts(file_name, contacts):\n    with open(file_name, \"w\", encoding=\"utf-8\", newline=\"\") as file:\n        writer = csv.writer(file)\n        writer.writerows(contacts)\n# Функция для вывода контактов на экран\ndef display_contacts(contacts):\n    if not contacts:\n        print(\"Нет доступных контактов.\")\n    else:\n        # Вывод заголовка таблицы контактов",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "display_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def display_contacts(contacts):\n    if not contacts:\n        print(\"Нет доступных контактов.\")\n    else:\n        # Вывод заголовка таблицы контактов\n        print(\"{:<4} {:<14} {:<12} {:<14} {:<18}\".format(\"№\", \"Фамилия\", \"Имя\", \"Отчество\", \"Номер телефона\"))\n        print(\"-\" * 70)\n        # Вывод каждого контакта в форматированной таблице\n        for i, contact in enumerate(contacts, start=1):\n            last_name, first_name, patronymic, phone_number = contact",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "search_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def search_contacts(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = []\n    for contact in contacts:\n        # Проверка, начинается ли хотя бы одно поле контакта с ключевого слова\n        if any(field.lower().startswith(keyword) for field in contact):\n            found_contacts.append(contact)\n    return found_contacts\n# Функция для добавления нового контакта\ndef add_contact(contacts):",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "add_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def add_contact(contacts):\n    last_name = input(\"Введите фамилию: \")\n    first_name = input(\"Введите имя: \")\n    patronymic = input(\"Введите отчество: \")\n    phone_number = input(\"Введите номер телефона: \")\n    contact = [last_name, first_name, patronymic, phone_number]\n    contacts.append(contact)\n    print(\"Контакт успешно добавлен.\")\n# Функция для редактирования контакта\ndef edit_contact(contacts, keyword):",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "edit_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def edit_contact(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = []\n    for i, contact in enumerate(contacts):\n        if any(field.lower().startswith(keyword) for field in contact):\n            found_contacts.append((i, contact))\n    if not found_contacts:\n        print(\"Контакты не найдены.\")\n    else:\n        print(\"Найденные контакты:\")",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "delete_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def delete_contact(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = []\n    for i, contact in enumerate(contacts):\n        if any(field.lower().startswith(keyword) for field in contact):\n            found_contacts.append((i, contact))\n    if not found_contacts:\n        print(\"Контакты не найдены.\")\n    else:\n        print(\"Найденные контакты:\")",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def main():\n    # Определение пути к файлу контактов\n    file_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"contacts.csv\")\n    # Загрузка контактов из файла\n    contacts = load_contacts(file_name)\n    while True:\n        # Вывод меню с возможными действиями\n        print(\"1. Вывести все контакты\")\n        print(\"2. Добавить контакт\")\n        print(\"3. Сохранить контакты\")",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "load_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def load_contacts(file_name):\n    contacts = []\n    try:\n        with open(file_name, \"r\", encoding=\"utf-8\") as file:\n            reader = csv.reader(file)\n            for row in reader:\n                contacts.append(row)\n    except FileNotFoundError:\n        pass\n    return contacts",
+        "detail": "PhoneBook.PhoneBookFinal",
+        "documentation": {}
+    },
+    {
+        "label": "save_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def save_contacts(file_name, contacts):\n    with open(file_name, \"w\", encoding=\"utf-8\", newline=\"\") as file:\n        writer = csv.writer(file)\n        writer.writerows(contacts)\n# Функция для вывода контактов на экран\ndef display_contacts(contacts):\n    if not contacts:\n        print(\"Нет доступных контактов.\")\n    else:\n        # Вывод заголовка таблицы контактов",
+        "detail": "PhoneBook.PhoneBookFinal",
+        "documentation": {}
+    },
+    {
+        "label": "display_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def display_contacts(contacts):\n    if not contacts:\n        print(\"Нет доступных контактов.\")\n    else:\n        # Вывод заголовка таблицы контактов\n        print(\"{:<4} {:<14} {:<12} {:<14} {:<18}\".format(\"№\", \"Фамилия\", \"Имя\", \"Отчество\", \"Номер телефона\"))\n        print(\"-\" * 70)\n        # Вывод каждого контакта в форматированной таблице\n        for i, contact in enumerate(contacts, start=1):\n            last_name, first_name, patronymic, phone_number = contact",
+        "detail": "PhoneBook.PhoneBookFinal",
+        "documentation": {}
+    },
+    {
+        "label": "search_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def search_contacts(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = [contact for contact in contacts if any(field.lower().startswith(keyword) for field in contact)]\n    return found_contacts\n# Функция для добавления нового контакта\ndef add_contact(contacts):\n    last_name = input(\"Введите фамилию: \")\n    first_name = input(\"Введите имя: \")\n    patronymic = input(\"Введите отчество: \")\n    phone_number = input(\"Введите номер телефона: \")",
+        "detail": "PhoneBook.PhoneBookFinal",
+        "documentation": {}
+    },
+    {
+        "label": "add_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def add_contact(contacts):\n    last_name = input(\"Введите фамилию: \")\n    first_name = input(\"Введите имя: \")\n    patronymic = input(\"Введите отчество: \")\n    phone_number = input(\"Введите номер телефона: \")\n    contact = [last_name, first_name, patronymic, phone_number]\n    contacts.append(contact)\n    print(\"Контакт успешно добавлен.\")\n# Функция для редактирования контакта\ndef edit_contact(contacts, keyword):",
+        "detail": "PhoneBook.PhoneBookFinal",
+        "documentation": {}
+    },
+    {
+        "label": "edit_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def edit_contact(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = [(i, contact) for i, contact in enumerate(contacts) if any(field.lower().startswith(keyword) for field in contact)]\n    if not found_contacts:\n        print(\"Контакты не найдены.\")\n    else:\n        print(\"Найденные контакты:\")\n        display_contacts([contact for _, contact in found_contacts])\n        choice = input(\"Введите номер контакта для редактирования: \")\n        if not choice.isdigit() or int(choice) < 1 or int(choice) > len(found_contacts):",
+        "detail": "PhoneBook.PhoneBookFinal",
+        "documentation": {}
+    },
+    {
+        "label": "delete_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def delete_contact(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = [(i, contact) for i, contact in enumerate(contacts) if any(field.lower().startswith(keyword) for field in contact)]\n    if not found_contacts:\n        print(\"Контакты не найдены.\")\n    else:\n        print(\"Найденные контакты:\")\n        display_contacts([contact for _, contact in found_contacts])\n        choice = input(\"Введите номер контакта для удаления: \")\n        if not choice.isdigit() or int(choice) < 1 or int(choice) > len(found_contacts):",
+        "detail": "PhoneBook.PhoneBookFinal",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def main():\n    # Определение пути к файлу контактов\n    file_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"contacts.csv\")\n    # Загрузка контактов из файла\n    contacts = load_contacts(file_name)\n    while True:\n        # Вывод меню с возможными действиями\n        print(\"1. Вывести все контакты\")\n        print(\"2. Добавить контакт\")\n        print(\"3. Сохранить контакты\")",
+        "detail": "PhoneBook.PhoneBookFinal",
         "documentation": {}
     },
     {
