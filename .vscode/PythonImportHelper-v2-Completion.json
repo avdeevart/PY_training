@@ -1,0 +1,2156 @@
+[
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "calendar",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "calendar",
+        "description": "calendar",
+        "detail": "calendar",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "model",
+        "description": "model",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "view",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "view",
+        "description": "view",
+        "detail": "view",
+        "documentation": {}
+    },
+    {
+        "label": "controller",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "controller",
+        "description": "controller",
+        "detail": "controller",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "lesson03",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "lesson03",
+        "description": "lesson03",
+        "detail": "lesson03",
+        "documentation": {}
+    },
+    {
+        "label": "max1",
+        "importPath": "lesson03",
+        "description": "lesson03",
+        "isExtraImport": true,
+        "detail": "lesson03",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "lesson03",
+        "description": "lesson03",
+        "isExtraImport": true,
+        "detail": "lesson03",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "chinese_new_year",
+        "kind": 2,
+        "importPath": "Feng_Shui.123",
+        "description": "Feng_Shui.123",
+        "peekOfCode": "def chinese_new_year(year):\n    c_year = (year - 3) % 60 % 12 + 1-3\n    print(c_year)\n    # Вычисляем дату нового года в формате (месяц, день)\n    # Формула взята из https://en.wikipedia.org/wiki/Chinese_New_Year\n    if c_year == 1:\n        date = (2, 1)\n    elif c_year == 2:\n        date = (1, 22)\n    elif c_year == 3:",
+        "detail": "Feng_Shui.123",
+        "documentation": {}
+    },
+    {
+        "label": "year",
+        "kind": 5,
+        "importPath": "Feng_Shui.123",
+        "description": "Feng_Shui.123",
+        "peekOfCode": "year = int(input(\"Введите год: \"))\n# Вычисляем дату нового года по китайскому календарю\ndate = chinese_new_year(year)\n# Выводим результат на консоль\nprint(\"Новый год по китайскому календарю в год\", year, \"будет\", date[1], \"числа\", date[0], \"месяца\")",
+        "detail": "Feng_Shui.123",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "kind": 5,
+        "importPath": "Feng_Shui.123",
+        "description": "Feng_Shui.123",
+        "peekOfCode": "date = chinese_new_year(year)\n# Выводим результат на консоль\nprint(\"Новый год по китайскому календарю в год\", year, \"будет\", date[1], \"числа\", date[0], \"месяца\")",
+        "detail": "Feng_Shui.123",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_output",
+        "kind": 2,
+        "importPath": "Feng_Shui.12officers",
+        "description": "Feng_Shui.12officers",
+        "peekOfCode": "def calculate_output(input1, input2):\n    animal_values = {\n        \"Тигр\": 1,\n        \"Кролик\": 2,\n        \"Дракон\": 3,\n        \"Змея\": 4,\n        \"Лошадь\": 5,\n        \"Коза\": 6,\n        \"Обезьяна\": 7,\n        \"Петух\": 8,",
+        "detail": "Feng_Shui.12officers",
+        "documentation": {}
+    },
+    {
+        "label": "output_values",
+        "kind": 5,
+        "importPath": "Feng_Shui.12officers",
+        "description": "Feng_Shui.12officers",
+        "peekOfCode": "output_values = {\n    1: \"Установление\",\n    2: \"Удаление\",\n    3: \"Наполнение\",\n    4: \"Баланс\",\n    5: \"Стабильность\",\n    6: \"Удержание\",\n    7: \"Разрушение\",\n    8: \"Опасность\",\n    9: \"Успех\",",
+        "detail": "Feng_Shui.12officers",
+        "documentation": {}
+    },
+    {
+        "label": "input1",
+        "kind": 5,
+        "importPath": "Feng_Shui.12officers",
+        "description": "Feng_Shui.12officers",
+        "peekOfCode": "input1 = \"Обезьяна\"\ninput2 = \"Кролик\"\noutput = calculate_output(input1, input2)\noutput_value = output_values[output]\nprint(output,output_value)",
+        "detail": "Feng_Shui.12officers",
+        "documentation": {}
+    },
+    {
+        "label": "input2",
+        "kind": 5,
+        "importPath": "Feng_Shui.12officers",
+        "description": "Feng_Shui.12officers",
+        "peekOfCode": "input2 = \"Кролик\"\noutput = calculate_output(input1, input2)\noutput_value = output_values[output]\nprint(output,output_value)",
+        "detail": "Feng_Shui.12officers",
+        "documentation": {}
+    },
+    {
+        "label": "output",
+        "kind": 5,
+        "importPath": "Feng_Shui.12officers",
+        "description": "Feng_Shui.12officers",
+        "peekOfCode": "output = calculate_output(input1, input2)\noutput_value = output_values[output]\nprint(output,output_value)",
+        "detail": "Feng_Shui.12officers",
+        "documentation": {}
+    },
+    {
+        "label": "output_value",
+        "kind": 5,
+        "importPath": "Feng_Shui.12officers",
+        "description": "Feng_Shui.12officers",
+        "peekOfCode": "output_value = output_values[output]\nprint(output,output_value)",
+        "detail": "Feng_Shui.12officers",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_output",
+        "kind": 2,
+        "importPath": "Feng_Shui.bazi",
+        "description": "Feng_Shui.bazi",
+        "peekOfCode": "def calculate_output(input1, input2):\n    animal_values = {\n        \"Тигр\": 1,\n        \"Кролик\": 2,\n        \"Дракон\": 3,\n        \"Змея\": 4,\n        \"Лошадь\": 5,\n        \"Коза\": 6,\n        \"Обезьяна\": 7,\n        \"Петух\": 8,",
+        "detail": "Feng_Shui.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "output_values",
+        "kind": 5,
+        "importPath": "Feng_Shui.bazi",
+        "description": "Feng_Shui.bazi",
+        "peekOfCode": "output_values = {\n    1: \"Установление\",\n    2: \"Удаление\",\n    3: \"Наполнение\",\n    4: \"Баланс\",\n    5: \"Стабильность\",\n    6: \"Удержание\",\n    7: \"Разрушение\",\n    8: \"Опасность\",\n    9: \"Успех\",",
+        "detail": "Feng_Shui.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "input1",
+        "kind": 5,
+        "importPath": "Feng_Shui.bazi",
+        "description": "Feng_Shui.bazi",
+        "peekOfCode": "input1 = \"Обезьяна\"\ninput2 = \"Кролик\"\noutput = calculate_output(input1, input2)\noutput_value = output_values[output]\nprint(output,output_value)",
+        "detail": "Feng_Shui.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "input2",
+        "kind": 5,
+        "importPath": "Feng_Shui.bazi",
+        "description": "Feng_Shui.bazi",
+        "peekOfCode": "input2 = \"Кролик\"\noutput = calculate_output(input1, input2)\noutput_value = output_values[output]\nprint(output,output_value)",
+        "detail": "Feng_Shui.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "output",
+        "kind": 5,
+        "importPath": "Feng_Shui.bazi",
+        "description": "Feng_Shui.bazi",
+        "peekOfCode": "output = calculate_output(input1, input2)\noutput_value = output_values[output]\nprint(output,output_value)",
+        "detail": "Feng_Shui.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "output_value",
+        "kind": 5,
+        "importPath": "Feng_Shui.bazi",
+        "description": "Feng_Shui.bazi",
+        "peekOfCode": "output_value = output_values[output]\nprint(output,output_value)",
+        "detail": "Feng_Shui.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "get_number_of_days",
+        "kind": 2,
+        "importPath": "Feng_Shui.ChinaMounthSE",
+        "description": "Feng_Shui.ChinaMounthSE",
+        "peekOfCode": "def get_number_of_days(year, month):\n    if month in (1, 3, 11, 12):\n        return 7\n    elif month == 2:\n        if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:\n            return 8\n        else:\n            return 7\n    elif month in (4, 5, 10, 12):\n        return 5",
+        "detail": "Feng_Shui.ChinaMounthSE",
+        "documentation": {}
+    },
+    {
+        "label": "year",
+        "kind": 5,
+        "importPath": "Feng_Shui.ChinaMounthSE",
+        "description": "Feng_Shui.ChinaMounthSE",
+        "peekOfCode": "year = int(input(\"Введите год: \"))\nmonth = int(input(\"Введите месяц: \"))\nstart_day_month = date(year, month, get_number_of_days(year, month))\nend_day_month = start_day_month + timedelta(days=calendar.monthrange(year, month)[1])\nprint(start_day_month, end_day_month)",
+        "detail": "Feng_Shui.ChinaMounthSE",
+        "documentation": {}
+    },
+    {
+        "label": "month",
+        "kind": 5,
+        "importPath": "Feng_Shui.ChinaMounthSE",
+        "description": "Feng_Shui.ChinaMounthSE",
+        "peekOfCode": "month = int(input(\"Введите месяц: \"))\nstart_day_month = date(year, month, get_number_of_days(year, month))\nend_day_month = start_day_month + timedelta(days=calendar.monthrange(year, month)[1])\nprint(start_day_month, end_day_month)",
+        "detail": "Feng_Shui.ChinaMounthSE",
+        "documentation": {}
+    },
+    {
+        "label": "start_day_month",
+        "kind": 5,
+        "importPath": "Feng_Shui.ChinaMounthSE",
+        "description": "Feng_Shui.ChinaMounthSE",
+        "peekOfCode": "start_day_month = date(year, month, get_number_of_days(year, month))\nend_day_month = start_day_month + timedelta(days=calendar.monthrange(year, month)[1])\nprint(start_day_month, end_day_month)",
+        "detail": "Feng_Shui.ChinaMounthSE",
+        "documentation": {}
+    },
+    {
+        "label": "end_day_month",
+        "kind": 5,
+        "importPath": "Feng_Shui.ChinaMounthSE",
+        "description": "Feng_Shui.ChinaMounthSE",
+        "peekOfCode": "end_day_month = start_day_month + timedelta(days=calendar.monthrange(year, month)[1])\nprint(start_day_month, end_day_month)",
+        "detail": "Feng_Shui.ChinaMounthSE",
+        "documentation": {}
+    },
+    {
+        "label": "chinese_new_year",
+        "kind": 2,
+        "importPath": "Feng_Shui.ChinaNewYear",
+        "description": "Feng_Shui.ChinaNewYear",
+        "peekOfCode": "def chinese_new_year(year):\n    # Определяем номер года по китайскому календарю\n    c_year = (year - 3) % 60 % 12 + 1-3\n    # Определяем дату нового года по китайскому календарю\n    date_dict = {\n        1: (2, 1),\n        2: (1, 22),\n        3: (2, 10),\n        4: (1, 29),\n        5: (2, 17),",
+        "detail": "Feng_Shui.ChinaNewYear",
+        "documentation": {}
+    },
+    {
+        "label": "year",
+        "kind": 5,
+        "importPath": "Feng_Shui.ChinaNewYear",
+        "description": "Feng_Shui.ChinaNewYear",
+        "peekOfCode": "year = int(input(\"Введите год: \"))\n# Вычисляем дату нового года по китайскому календарю\ndate = chinese_new_year(year)\n# Выводим результат на консоль\nprint(\"Новый год по китайскому календарю в год\", year, \"будет\", date[1], \"числа\", date[0], \"месяца\")",
+        "detail": "Feng_Shui.ChinaNewYear",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "kind": 5,
+        "importPath": "Feng_Shui.ChinaNewYear",
+        "description": "Feng_Shui.ChinaNewYear",
+        "peekOfCode": "date = chinese_new_year(year)\n# Выводим результат на консоль\nprint(\"Новый год по китайскому календарю в год\", year, \"будет\", date[1], \"числа\", date[0], \"месяца\")",
+        "detail": "Feng_Shui.ChinaNewYear",
+        "documentation": {}
+    },
+    {
+        "label": "year",
+        "kind": 5,
+        "importPath": "Feng_Shui.EarthBranch",
+        "description": "Feng_Shui.EarthBranch",
+        "peekOfCode": "year = int(input(\"Введите год: \"))\n# определяем номер в цикле (от 1 до 12)\ncycle_year = (year - 1974) % 12 + 1\n# определяем животное по номеру в цикле\nif cycle_year == 1 or cycle_year == 6 or cycle_year == 8:\n    animal = \"Тигр\"\nelif cycle_year == 2 or cycle_year == 7 or cycle_year == 11:\n    animal = \"Кролик\"\nelif cycle_year == 3 or cycle_year == 9 or cycle_year == 12:\n    animal = \"Дракон\"",
+        "detail": "Feng_Shui.EarthBranch",
+        "documentation": {}
+    },
+    {
+        "label": "cycle_year",
+        "kind": 5,
+        "importPath": "Feng_Shui.EarthBranch",
+        "description": "Feng_Shui.EarthBranch",
+        "peekOfCode": "cycle_year = (year - 1974) % 12 + 1\n# определяем животное по номеру в цикле\nif cycle_year == 1 or cycle_year == 6 or cycle_year == 8:\n    animal = \"Тигр\"\nelif cycle_year == 2 or cycle_year == 7 or cycle_year == 11:\n    animal = \"Кролик\"\nelif cycle_year == 3 or cycle_year == 9 or cycle_year == 12:\n    animal = \"Дракон\"\nelif cycle_year == 4 or cycle_year == 10:\n    animal = \"Змея\"",
+        "detail": "Feng_Shui.EarthBranch",
+        "documentation": {}
+    },
+    {
+        "label": "base_table",
+        "kind": 5,
+        "importPath": "Feng_Shui.EBDay",
+        "description": "Feng_Shui.EBDay",
+        "peekOfCode": "base_table = {\n    0: 'Собака',\n    1: 'Свинья',\n    2: 'Крыса',\n    3: 'Бык',\n    4: 'Тигр',\n    5: 'Кролик',\n    6: 'Дракон',\n    7: 'Змея',\n    8: 'Лошадь',",
+        "detail": "Feng_Shui.EBDay",
+        "documentation": {}
+    },
+    {
+        "label": "delta_days",
+        "kind": 5,
+        "importPath": "Feng_Shui.EBDay",
+        "description": "Feng_Shui.EBDay",
+        "peekOfCode": "delta_days = (datetime.date(year, month, day) - datetime.date(1975, 12, 30)).days\n# определяем земную ветвь для введенной даты\nearthly_branch = base_table.get(delta_days % 12)\n# выводим результат\nprint(f\"Земная ветвь дня: {earthly_branch}\")",
+        "detail": "Feng_Shui.EBDay",
+        "documentation": {}
+    },
+    {
+        "label": "earthly_branch",
+        "kind": 5,
+        "importPath": "Feng_Shui.EBDay",
+        "description": "Feng_Shui.EBDay",
+        "peekOfCode": "earthly_branch = base_table.get(delta_days % 12)\n# выводим результат\nprint(f\"Земная ветвь дня: {earthly_branch}\")",
+        "detail": "Feng_Shui.EBDay",
+        "documentation": {}
+    },
+    {
+        "label": "earthly_branches",
+        "kind": 5,
+        "importPath": "Feng_Shui.EBMounth",
+        "description": "Feng_Shui.EBMounth",
+        "peekOfCode": "earthly_branches = ['Крыса', 'Бык', 'Тигр', 'Кролик', 'Дракон', 'Змея', 'Лошадь', 'Коза', 'Обезьяна', 'Петух', 'Собака', 'Свинья']\n# определяем опорную дату\nstart_date = (1975, 12)\n# запрашиваем у пользователя год и месяц\nyear = int(input('Введите год: '))\nmonth = int(input('Введите номер месяца: '))\n# вычисляем количество месяцев между опорной датой и заданной датой\nnum_months = (year - start_date[0]) * 12 + (month - start_date[1])\n# вычисляем номер земной ветви месяца\nearthly_branch_num = num_months % len(earthly_branches)",
+        "detail": "Feng_Shui.EBMounth",
+        "documentation": {}
+    },
+    {
+        "label": "start_date",
+        "kind": 5,
+        "importPath": "Feng_Shui.EBMounth",
+        "description": "Feng_Shui.EBMounth",
+        "peekOfCode": "start_date = (1975, 12)\n# запрашиваем у пользователя год и месяц\nyear = int(input('Введите год: '))\nmonth = int(input('Введите номер месяца: '))\n# вычисляем количество месяцев между опорной датой и заданной датой\nnum_months = (year - start_date[0]) * 12 + (month - start_date[1])\n# вычисляем номер земной ветви месяца\nearthly_branch_num = num_months % len(earthly_branches)\n# выводим результат\nprint('Земная ветвь для {}-го месяца {} года: {}'.format(month, year, earthly_branches[earthly_branch_num]))",
+        "detail": "Feng_Shui.EBMounth",
+        "documentation": {}
+    },
+    {
+        "label": "year",
+        "kind": 5,
+        "importPath": "Feng_Shui.EBMounth",
+        "description": "Feng_Shui.EBMounth",
+        "peekOfCode": "year = int(input('Введите год: '))\nmonth = int(input('Введите номер месяца: '))\n# вычисляем количество месяцев между опорной датой и заданной датой\nnum_months = (year - start_date[0]) * 12 + (month - start_date[1])\n# вычисляем номер земной ветви месяца\nearthly_branch_num = num_months % len(earthly_branches)\n# выводим результат\nprint('Земная ветвь для {}-го месяца {} года: {}'.format(month, year, earthly_branches[earthly_branch_num]))",
+        "detail": "Feng_Shui.EBMounth",
+        "documentation": {}
+    },
+    {
+        "label": "month",
+        "kind": 5,
+        "importPath": "Feng_Shui.EBMounth",
+        "description": "Feng_Shui.EBMounth",
+        "peekOfCode": "month = int(input('Введите номер месяца: '))\n# вычисляем количество месяцев между опорной датой и заданной датой\nnum_months = (year - start_date[0]) * 12 + (month - start_date[1])\n# вычисляем номер земной ветви месяца\nearthly_branch_num = num_months % len(earthly_branches)\n# выводим результат\nprint('Земная ветвь для {}-го месяца {} года: {}'.format(month, year, earthly_branches[earthly_branch_num]))",
+        "detail": "Feng_Shui.EBMounth",
+        "documentation": {}
+    },
+    {
+        "label": "num_months",
+        "kind": 5,
+        "importPath": "Feng_Shui.EBMounth",
+        "description": "Feng_Shui.EBMounth",
+        "peekOfCode": "num_months = (year - start_date[0]) * 12 + (month - start_date[1])\n# вычисляем номер земной ветви месяца\nearthly_branch_num = num_months % len(earthly_branches)\n# выводим результат\nprint('Земная ветвь для {}-го месяца {} года: {}'.format(month, year, earthly_branches[earthly_branch_num]))",
+        "detail": "Feng_Shui.EBMounth",
+        "documentation": {}
+    },
+    {
+        "label": "earthly_branch_num",
+        "kind": 5,
+        "importPath": "Feng_Shui.EBMounth",
+        "description": "Feng_Shui.EBMounth",
+        "peekOfCode": "earthly_branch_num = num_months % len(earthly_branches)\n# выводим результат\nprint('Земная ветвь для {}-го месяца {} года: {}'.format(month, year, earthly_branches[earthly_branch_num]))",
+        "detail": "Feng_Shui.EBMounth",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_flying_stars",
+        "kind": 2,
+        "importPath": "Feng_Shui.Fly_Stars",
+        "description": "Feng_Shui.Fly_Stars",
+        "peekOfCode": "def calculate_flying_stars(year, animal_sign):\n    # Определяем элемент на основе номера знака животного\n    element = animal_sign % 5\n    element_name = elements[element]\n    # Расчет часовой звезды\n    hour_star = (4 - element) % 9 + 1\n    # Расчет дневной звезды\n    day_star = (10 - element) % 9 + 1\n    # Расчет месячной звезды\n    month_star = (7 - element) % 9 + 1",
+        "detail": "Feng_Shui.Fly_Stars",
+        "documentation": {}
+    },
+    {
+        "label": "elements",
+        "kind": 5,
+        "importPath": "Feng_Shui.Fly_Stars",
+        "description": "Feng_Shui.Fly_Stars",
+        "peekOfCode": "elements = {\n    0: \"металл\",\n    1: \"вода\",\n    2: \"дерево\",\n    3: \"огонь\",\n    4: \"земля\"\n}\ndef calculate_flying_stars(year, animal_sign):\n    # Определяем элемент на основе номера знака животного\n    element = animal_sign % 5",
+        "detail": "Feng_Shui.Fly_Stars",
+        "documentation": {}
+    },
+    {
+        "label": "get_symbol_element",
+        "kind": 2,
+        "importPath": "Feng_Shui.HevenPillar",
+        "description": "Feng_Shui.HevenPillar",
+        "peekOfCode": "def get_symbol_element(year):\n    cycle_year = (year - 1974) % 10\n    symbol = 'Ян' if cycle_year in [0, 2, 4, 6, 8] else 'Инь'\n    element = ['дерево', 'огонь', 'земля', 'металл', 'вода'][cycle_year // 2]\n    return symbol, element\n# Пример использования\nyear = int(input('Введите год: '))\nsymbol, element = get_symbol_element(year)\nprint(f'Для года {year} символ - {symbol}, элемент - {element}')",
+        "detail": "Feng_Shui.HevenPillar",
+        "documentation": {}
+    },
+    {
+        "label": "year",
+        "kind": 5,
+        "importPath": "Feng_Shui.HevenPillar",
+        "description": "Feng_Shui.HevenPillar",
+        "peekOfCode": "year = int(input('Введите год: '))\nsymbol, element = get_symbol_element(year)\nprint(f'Для года {year} символ - {symbol}, элемент - {element}')",
+        "detail": "Feng_Shui.HevenPillar",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_TABLE",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPDay",
+        "description": "Feng_Shui.HPDay",
+        "peekOfCode": "BASE_TABLE = [\n    ('Ян', 'металл'),\n    ('Инь', 'металл'),\n    ('Ян', 'вода'),\n    ('Инь', 'вода'),\n    ('Ян', 'дерево'),\n    ('Инь', 'дерево'),\n    ('Ян', 'огонь'),\n    ('Инь', 'огонь'),\n    ('Ян', 'земля'),",
+        "detail": "Feng_Shui.HPDay",
+        "documentation": {}
+    },
+    {
+        "label": "day",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPDay",
+        "description": "Feng_Shui.HPDay",
+        "peekOfCode": "day = int(input(\"Введите день: \"))\nmonth = int(input(\"Введите месяц: \"))\nyear = int(input(\"Введите год: \"))\ninput_date = date(year, month, day)\nbase_date = date(1975, 12, 30)\ndelta_days = (input_date - base_date).days\nheavenly_stem, sign = BASE_TABLE[delta_days % 10]\nprint(f\"Небесный ствол дня: {heavenly_stem}, знак: {sign}\")",
+        "detail": "Feng_Shui.HPDay",
+        "documentation": {}
+    },
+    {
+        "label": "month",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPDay",
+        "description": "Feng_Shui.HPDay",
+        "peekOfCode": "month = int(input(\"Введите месяц: \"))\nyear = int(input(\"Введите год: \"))\ninput_date = date(year, month, day)\nbase_date = date(1975, 12, 30)\ndelta_days = (input_date - base_date).days\nheavenly_stem, sign = BASE_TABLE[delta_days % 10]\nprint(f\"Небесный ствол дня: {heavenly_stem}, знак: {sign}\")",
+        "detail": "Feng_Shui.HPDay",
+        "documentation": {}
+    },
+    {
+        "label": "year",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPDay",
+        "description": "Feng_Shui.HPDay",
+        "peekOfCode": "year = int(input(\"Введите год: \"))\ninput_date = date(year, month, day)\nbase_date = date(1975, 12, 30)\ndelta_days = (input_date - base_date).days\nheavenly_stem, sign = BASE_TABLE[delta_days % 10]\nprint(f\"Небесный ствол дня: {heavenly_stem}, знак: {sign}\")",
+        "detail": "Feng_Shui.HPDay",
+        "documentation": {}
+    },
+    {
+        "label": "input_date",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPDay",
+        "description": "Feng_Shui.HPDay",
+        "peekOfCode": "input_date = date(year, month, day)\nbase_date = date(1975, 12, 30)\ndelta_days = (input_date - base_date).days\nheavenly_stem, sign = BASE_TABLE[delta_days % 10]\nprint(f\"Небесный ствол дня: {heavenly_stem}, знак: {sign}\")",
+        "detail": "Feng_Shui.HPDay",
+        "documentation": {}
+    },
+    {
+        "label": "base_date",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPDay",
+        "description": "Feng_Shui.HPDay",
+        "peekOfCode": "base_date = date(1975, 12, 30)\ndelta_days = (input_date - base_date).days\nheavenly_stem, sign = BASE_TABLE[delta_days % 10]\nprint(f\"Небесный ствол дня: {heavenly_stem}, знак: {sign}\")",
+        "detail": "Feng_Shui.HPDay",
+        "documentation": {}
+    },
+    {
+        "label": "delta_days",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPDay",
+        "description": "Feng_Shui.HPDay",
+        "peekOfCode": "delta_days = (input_date - base_date).days\nheavenly_stem, sign = BASE_TABLE[delta_days % 10]\nprint(f\"Небесный ствол дня: {heavenly_stem}, знак: {sign}\")",
+        "detail": "Feng_Shui.HPDay",
+        "documentation": {}
+    },
+    {
+        "label": "data_60",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPEB12Hours",
+        "description": "Feng_Shui.HPEB12Hours",
+        "peekOfCode": "data_60 = {1:(\"Ян\",\"дерево\",\"Крыса\"),\n2:(\"Инь\",\"дерево\",\"Бык\"),\n3:(\"Ян\",\"огонь\",\"Тигр\"),\n4:(\"Инь\",\"огонь\",\"Кролик\"),\n5:(\"Ян\",\"земля\",\"Дракон\"),\n6:(\"Инь\",\"земля\",\"Змея\"),\n7:(\"Ян\",\"металл\",\"Лошадь\"),\n8:(\"Инь\",\"металл\",\"Коза\"),\n9:(\"Ян\",\"вода\",\"Обзеъяна\"),\n10:(\"Инь\",\"вода\",\"Петух\"),",
+        "detail": "Feng_Shui.HPEB12Hours",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPEB12Hours",
+        "description": "Feng_Shui.HPEB12Hours",
+        "peekOfCode": "num = int(input(\"введите число от 1 до 60:\"))\nprint(\"В день:\",data_60[num][0], data_60[num][1], data_60[num][2])\nprint(\"Входят следующие двух-часовки:\")\nstart = ((num - 1) % 5) * 12 + 1\nend = ((num - 1) % 5 + 1) * 12\nfor i in range(start, end+1):\n    print(data_60[i][0], data_60[i][1], data_60[i][2])\n# --------------------------------------------------------------------------------------------------------\ntime = input(\"Введите время в формате HH:MM: \")\nhour = int(time.split(':')[0])",
+        "detail": "Feng_Shui.HPEB12Hours",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPEB12Hours",
+        "description": "Feng_Shui.HPEB12Hours",
+        "peekOfCode": "start = ((num - 1) % 5) * 12 + 1\nend = ((num - 1) % 5 + 1) * 12\nfor i in range(start, end+1):\n    print(data_60[i][0], data_60[i][1], data_60[i][2])\n# --------------------------------------------------------------------------------------------------------\ntime = input(\"Введите время в формате HH:MM: \")\nhour = int(time.split(':')[0])\nanimals = ['Крыса', 'Бык', 'Тигр', 'Кролик', 'Дракон', 'Змея', 'Лошадь', 'Коза', 'Обезьяна', 'Петух', 'Собака', 'Свинья']\nindex = (hour + 1) % 24 // 2\nprint(animals[index])",
+        "detail": "Feng_Shui.HPEB12Hours",
+        "documentation": {}
+    },
+    {
+        "label": "end",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPEB12Hours",
+        "description": "Feng_Shui.HPEB12Hours",
+        "peekOfCode": "end = ((num - 1) % 5 + 1) * 12\nfor i in range(start, end+1):\n    print(data_60[i][0], data_60[i][1], data_60[i][2])\n# --------------------------------------------------------------------------------------------------------\ntime = input(\"Введите время в формате HH:MM: \")\nhour = int(time.split(':')[0])\nanimals = ['Крыса', 'Бык', 'Тигр', 'Кролик', 'Дракон', 'Змея', 'Лошадь', 'Коза', 'Обезьяна', 'Петух', 'Собака', 'Свинья']\nindex = (hour + 1) % 24 // 2\nprint(animals[index])",
+        "detail": "Feng_Shui.HPEB12Hours",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPEB12Hours",
+        "description": "Feng_Shui.HPEB12Hours",
+        "peekOfCode": "time = input(\"Введите время в формате HH:MM: \")\nhour = int(time.split(':')[0])\nanimals = ['Крыса', 'Бык', 'Тигр', 'Кролик', 'Дракон', 'Змея', 'Лошадь', 'Коза', 'Обезьяна', 'Петух', 'Собака', 'Свинья']\nindex = (hour + 1) % 24 // 2\nprint(animals[index])",
+        "detail": "Feng_Shui.HPEB12Hours",
+        "documentation": {}
+    },
+    {
+        "label": "hour",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPEB12Hours",
+        "description": "Feng_Shui.HPEB12Hours",
+        "peekOfCode": "hour = int(time.split(':')[0])\nanimals = ['Крыса', 'Бык', 'Тигр', 'Кролик', 'Дракон', 'Змея', 'Лошадь', 'Коза', 'Обезьяна', 'Петух', 'Собака', 'Свинья']\nindex = (hour + 1) % 24 // 2\nprint(animals[index])",
+        "detail": "Feng_Shui.HPEB12Hours",
+        "documentation": {}
+    },
+    {
+        "label": "animals",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPEB12Hours",
+        "description": "Feng_Shui.HPEB12Hours",
+        "peekOfCode": "animals = ['Крыса', 'Бык', 'Тигр', 'Кролик', 'Дракон', 'Змея', 'Лошадь', 'Коза', 'Обезьяна', 'Петух', 'Собака', 'Свинья']\nindex = (hour + 1) % 24 // 2\nprint(animals[index])",
+        "detail": "Feng_Shui.HPEB12Hours",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPEB12Hours",
+        "description": "Feng_Shui.HPEB12Hours",
+        "peekOfCode": "index = (hour + 1) % 24 // 2\nprint(animals[index])",
+        "detail": "Feng_Shui.HPEB12Hours",
+        "documentation": {}
+    },
+    {
+        "label": "year",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPMounth",
+        "description": "Feng_Shui.HPMounth",
+        "peekOfCode": "year = int(input(\"Введите год: \"))\nmonth = int(input(\"Введите номер месяца: \"))\nreference_date = (1975, 12, \"Ян\", \"земля\")\nheavenly_stems = [(\"Ян\", \"земля\"), (\"Инь\", \"земля\"), (\"Ян\", \"металл\"), (\"Инь\", \"металл\"), (\"Ян\", \"вода\"), (\"Инь\", \"вода\"), (\"Ян\", \"дерево\"), (\"Инь\", \"дерево\"), (\"Ян\", \"огонь\"), (\"Инь\", \"огонь\")]\n# вычисляем порядковый номер месяца относительно опорной даты\nmonths_since_reference = (year - reference_date[0]) * 12 + (month - reference_date[1])\n# вычисляем индекс небесного ствола для данного месяца\nheavenly_stem_index = months_since_reference % 10\n# получаем название небесного ствола из списка\nheavenly_stem = heavenly_stems[heavenly_stem_index]",
+        "detail": "Feng_Shui.HPMounth",
+        "documentation": {}
+    },
+    {
+        "label": "month",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPMounth",
+        "description": "Feng_Shui.HPMounth",
+        "peekOfCode": "month = int(input(\"Введите номер месяца: \"))\nreference_date = (1975, 12, \"Ян\", \"земля\")\nheavenly_stems = [(\"Ян\", \"земля\"), (\"Инь\", \"земля\"), (\"Ян\", \"металл\"), (\"Инь\", \"металл\"), (\"Ян\", \"вода\"), (\"Инь\", \"вода\"), (\"Ян\", \"дерево\"), (\"Инь\", \"дерево\"), (\"Ян\", \"огонь\"), (\"Инь\", \"огонь\")]\n# вычисляем порядковый номер месяца относительно опорной даты\nmonths_since_reference = (year - reference_date[0]) * 12 + (month - reference_date[1])\n# вычисляем индекс небесного ствола для данного месяца\nheavenly_stem_index = months_since_reference % 10\n# получаем название небесного ствола из списка\nheavenly_stem = heavenly_stems[heavenly_stem_index]\nprint(\"Небесный ствол для {}-го месяца {} года: {} ({})\".format(month, year, heavenly_stem[0], heavenly_stem[1]))",
+        "detail": "Feng_Shui.HPMounth",
+        "documentation": {}
+    },
+    {
+        "label": "reference_date",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPMounth",
+        "description": "Feng_Shui.HPMounth",
+        "peekOfCode": "reference_date = (1975, 12, \"Ян\", \"земля\")\nheavenly_stems = [(\"Ян\", \"земля\"), (\"Инь\", \"земля\"), (\"Ян\", \"металл\"), (\"Инь\", \"металл\"), (\"Ян\", \"вода\"), (\"Инь\", \"вода\"), (\"Ян\", \"дерево\"), (\"Инь\", \"дерево\"), (\"Ян\", \"огонь\"), (\"Инь\", \"огонь\")]\n# вычисляем порядковый номер месяца относительно опорной даты\nmonths_since_reference = (year - reference_date[0]) * 12 + (month - reference_date[1])\n# вычисляем индекс небесного ствола для данного месяца\nheavenly_stem_index = months_since_reference % 10\n# получаем название небесного ствола из списка\nheavenly_stem = heavenly_stems[heavenly_stem_index]\nprint(\"Небесный ствол для {}-го месяца {} года: {} ({})\".format(month, year, heavenly_stem[0], heavenly_stem[1]))",
+        "detail": "Feng_Shui.HPMounth",
+        "documentation": {}
+    },
+    {
+        "label": "heavenly_stems",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPMounth",
+        "description": "Feng_Shui.HPMounth",
+        "peekOfCode": "heavenly_stems = [(\"Ян\", \"земля\"), (\"Инь\", \"земля\"), (\"Ян\", \"металл\"), (\"Инь\", \"металл\"), (\"Ян\", \"вода\"), (\"Инь\", \"вода\"), (\"Ян\", \"дерево\"), (\"Инь\", \"дерево\"), (\"Ян\", \"огонь\"), (\"Инь\", \"огонь\")]\n# вычисляем порядковый номер месяца относительно опорной даты\nmonths_since_reference = (year - reference_date[0]) * 12 + (month - reference_date[1])\n# вычисляем индекс небесного ствола для данного месяца\nheavenly_stem_index = months_since_reference % 10\n# получаем название небесного ствола из списка\nheavenly_stem = heavenly_stems[heavenly_stem_index]\nprint(\"Небесный ствол для {}-го месяца {} года: {} ({})\".format(month, year, heavenly_stem[0], heavenly_stem[1]))",
+        "detail": "Feng_Shui.HPMounth",
+        "documentation": {}
+    },
+    {
+        "label": "months_since_reference",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPMounth",
+        "description": "Feng_Shui.HPMounth",
+        "peekOfCode": "months_since_reference = (year - reference_date[0]) * 12 + (month - reference_date[1])\n# вычисляем индекс небесного ствола для данного месяца\nheavenly_stem_index = months_since_reference % 10\n# получаем название небесного ствола из списка\nheavenly_stem = heavenly_stems[heavenly_stem_index]\nprint(\"Небесный ствол для {}-го месяца {} года: {} ({})\".format(month, year, heavenly_stem[0], heavenly_stem[1]))",
+        "detail": "Feng_Shui.HPMounth",
+        "documentation": {}
+    },
+    {
+        "label": "heavenly_stem_index",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPMounth",
+        "description": "Feng_Shui.HPMounth",
+        "peekOfCode": "heavenly_stem_index = months_since_reference % 10\n# получаем название небесного ствола из списка\nheavenly_stem = heavenly_stems[heavenly_stem_index]\nprint(\"Небесный ствол для {}-го месяца {} года: {} ({})\".format(month, year, heavenly_stem[0], heavenly_stem[1]))",
+        "detail": "Feng_Shui.HPMounth",
+        "documentation": {}
+    },
+    {
+        "label": "heavenly_stem",
+        "kind": 5,
+        "importPath": "Feng_Shui.HPMounth",
+        "description": "Feng_Shui.HPMounth",
+        "peekOfCode": "heavenly_stem = heavenly_stems[heavenly_stem_index]\nprint(\"Небесный ствол для {}-го месяца {} года: {} ({})\".format(month, year, heavenly_stem[0], heavenly_stem[1]))",
+        "detail": "Feng_Shui.HPMounth",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.controller",
+        "description": "PhoneBook.MVC.controller",
+        "peekOfCode": "def main():\n    # Определение пути к файлу контактов\n    file_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"contacts.csv\")\n    # Загрузка контактов из файла\n    contacts = model.load_contacts(file_name)\n    while True:\n        # Вывод меню с возможными действиями\n        print(\"1. Вывести все контакты\")\n        print(\"2. Добавить контакт\")\n        print(\"3. Сохранить контакты\")",
+        "detail": "PhoneBook.MVC.controller",
+        "documentation": {}
+    },
+    {
+        "label": "load_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.model",
+        "description": "PhoneBook.MVC.model",
+        "peekOfCode": "def load_contacts(file_name):\n    contacts = []\n    try:\n        with open(file_name, \"r\", encoding=\"utf-8\") as file:\n            reader = csv.reader(file)\n            for row in reader:\n                contacts.append(row)\n    except FileNotFoundError:\n        pass\n    return contacts",
+        "detail": "PhoneBook.MVC.model",
+        "documentation": {}
+    },
+    {
+        "label": "save_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.model",
+        "description": "PhoneBook.MVC.model",
+        "peekOfCode": "def save_contacts(file_name, contacts):\n    with open(file_name, \"w\", encoding=\"utf-8\", newline=\"\") as file:\n        writer = csv.writer(file)\n        writer.writerows(contacts)\n# Функция для поиска контактов по ключевому слову\ndef search_contacts(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = [contact for contact in contacts if any(field.lower().startswith(keyword) for field in contact)]\n    return found_contacts",
+        "detail": "PhoneBook.MVC.model",
+        "documentation": {}
+    },
+    {
+        "label": "search_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.model",
+        "description": "PhoneBook.MVC.model",
+        "peekOfCode": "def search_contacts(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = [contact for contact in contacts if any(field.lower().startswith(keyword) for field in contact)]\n    return found_contacts",
+        "detail": "PhoneBook.MVC.model",
+        "documentation": {}
+    },
+    {
+        "label": "display_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.view",
+        "description": "PhoneBook.MVC.view",
+        "peekOfCode": "def display_contacts(contacts):\n    if not contacts:\n        print(\"Нет доступных контактов.\")\n    else:\n        # Вывод заголовка таблицы контактов\n        print(\"{:<4} {:<14} {:<12} {:<14} {:<18}\".format(\"№\", \"Фамилия\", \"Имя\", \"Отчество\", \"Номер телефона\"))\n        print(\"-\" * 70)\n        # Вывод каждого контакта в форматированной таблице\n        for i, contact in enumerate(contacts, start=1):\n            last_name, first_name, patronymic, phone_number = contact",
+        "detail": "PhoneBook.MVC.view",
+        "documentation": {}
+    },
+    {
+        "label": "add_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.view",
+        "description": "PhoneBook.MVC.view",
+        "peekOfCode": "def add_contact(contacts):\n    last_name = input(\"Введите фамилию: \")\n    first_name = input(\"Введите имя: \")\n    patronymic = input(\"Введите отчество: \")\n    phone_number = input(\"Введите номер телефона: \")\n    contact = [last_name, first_name, patronymic, phone_number]\n    contacts.append(contact)\n    print(\"Контакт успешно добавлен.\")\n# Функция для редактирования контакта\ndef edit_contact(contacts, keyword):",
+        "detail": "PhoneBook.MVC.view",
+        "documentation": {}
+    },
+    {
+        "label": "edit_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.view",
+        "description": "PhoneBook.MVC.view",
+        "peekOfCode": "def edit_contact(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = [(i, contact) for i, contact in enumerate(contacts) if any(field.lower().startswith(keyword) for field in contact)]\n    if not found_contacts:\n        print(\"Контакты не найдены.\")\n    else:\n        print(\"Найденные контакты:\")\n        display_contacts([contact for _, contact in found_contacts])\n        choice = input(\"Введите номер контакта для редактирования: \")\n        if not choice.isdigit() or int(choice) < 1 or int(choice) > len(found_contacts):",
+        "detail": "PhoneBook.MVC.view",
+        "documentation": {}
+    },
+    {
+        "label": "delete_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.MVC.view",
+        "description": "PhoneBook.MVC.view",
+        "peekOfCode": "def delete_contact(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = [(i, contact) for i, contact in enumerate(contacts) if any(field.lower().startswith(keyword) for field in contact)]\n    if not found_contacts:\n        print(\"Контакты не найдены.\")\n    else:\n        print(\"Найденные контакты:\")\n        display_contacts([contact for _, contact in found_contacts])\n        choice = input(\"Введите номер контакта для удаления: \")\n        if not choice.isdigit() or int(choice) < 1 or int(choice) > len(found_contacts):",
+        "detail": "PhoneBook.MVC.view",
+        "documentation": {}
+    },
+    {
+        "label": "load_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBook",
+        "description": "PhoneBook.PhoneBook",
+        "peekOfCode": "def load_contacts(file_name):\n    \"\"\"\n    Загружает контакты из файла.\n    Параметры:\n        file_name (str): Имя файла.\n    Возвращает:\n        list: Список контактов.\n    \"\"\"\n    contacts = []\n    try:",
+        "detail": "PhoneBook.PhoneBook",
+        "documentation": {}
+    },
+    {
+        "label": "save_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBook",
+        "description": "PhoneBook.PhoneBook",
+        "peekOfCode": "def save_contacts(file_name, contacts):\n    \"\"\"\n    Сохраняет контакты в файле.\n    Параметры:\n        file_name (str): Имя файла.\n        contacts (list): Список контактов.\n    \"\"\"\n    with open(file_name, \"w\", encoding=\"utf-8\", newline=\"\") as file:\n        writer = csv.writer(file)\n        writer.writerows(contacts)",
+        "detail": "PhoneBook.PhoneBook",
+        "documentation": {}
+    },
+    {
+        "label": "display_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBook",
+        "description": "PhoneBook.PhoneBook",
+        "peekOfCode": "def display_contacts(contacts):\n    \"\"\"\n    Выводит контакты на экран в формате телефонного справочника.\n    Параметры:\n        contacts (list): Список контактов.\n    \"\"\"\n    if not contacts:\n        print(\"Нет доступных контактов.\")\n    else:\n        print(\"{:<14} {:<12} {:<14} {:<18}\".format(\"Фамилия\", \"Имя\", \"Отчество\", \"Номер телефона\"))",
+        "detail": "PhoneBook.PhoneBook",
+        "documentation": {}
+    },
+    {
+        "label": "search_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBook",
+        "description": "PhoneBook.PhoneBook",
+        "peekOfCode": "def search_contacts(contacts, keyword):\n    \"\"\"\n    Ищет контакты по заданному ключевому слову.\n    Параметры:\n        contacts (list): Список контактов.\n        keyword (str): Ключевое слово для поиска.\n    Возвращает:\n        list: Список найденных контактов.\n    \"\"\"\n    keyword = keyword.lower()",
+        "detail": "PhoneBook.PhoneBook",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBook",
+        "description": "PhoneBook.PhoneBook",
+        "peekOfCode": "def main():\n    file_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"contacts.csv\")\n    contacts = load_contacts(file_name)\n    while True:\n        print(\"1. Вывести все контакты\")\n        print(\"2. Добавить контакт\")\n        print(\"3. Сохранить контакты\")\n        print(\"4. Поиск контактов\")\n        print(\"5. Выйти\")\n        choice = input(\"Выберите действие (1-5): \")",
+        "detail": "PhoneBook.PhoneBook",
+        "documentation": {}
+    },
+    {
+        "label": "load_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def load_contacts(file_name):\n    contacts = []\n    try:\n        with open(file_name, \"r\", encoding=\"utf-8\") as file:\n            reader = csv.reader(file)\n            for row in reader:\n                contacts.append(row)\n    except FileNotFoundError:\n        pass\n    return contacts",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "save_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def save_contacts(file_name, contacts):\n    with open(file_name, \"w\", encoding=\"utf-8\", newline=\"\") as file:\n        writer = csv.writer(file)\n        writer.writerows(contacts)\n# Функция для вывода контактов на экран\ndef display_contacts(contacts):\n    if not contacts:\n        print(\"Нет доступных контактов.\")\n    else:\n        # Вывод заголовка таблицы контактов",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "display_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def display_contacts(contacts):\n    if not contacts:\n        print(\"Нет доступных контактов.\")\n    else:\n        # Вывод заголовка таблицы контактов\n        print(\"{:<4} {:<14} {:<12} {:<14} {:<18}\".format(\"№\", \"Фамилия\", \"Имя\", \"Отчество\", \"Номер телефона\"))\n        print(\"-\" * 70)\n        # Вывод каждого контакта в форматированной таблице\n        for i, contact in enumerate(contacts, start=1):\n            last_name, first_name, patronymic, phone_number = contact",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "search_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def search_contacts(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = []\n    for contact in contacts:\n        # Проверка, начинается ли хотя бы одно поле контакта с ключевого слова\n        if any(field.lower().startswith(keyword) for field in contact):\n            found_contacts.append(contact)\n    return found_contacts\n# Функция для добавления нового контакта\ndef add_contact(contacts):",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "add_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def add_contact(contacts):\n    last_name = input(\"Введите фамилию: \")\n    first_name = input(\"Введите имя: \")\n    patronymic = input(\"Введите отчество: \")\n    phone_number = input(\"Введите номер телефона: \")\n    contact = [last_name, first_name, patronymic, phone_number]\n    contacts.append(contact)\n    print(\"Контакт успешно добавлен.\")\n# Функция для редактирования контакта\ndef edit_contact(contacts, keyword):",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "edit_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def edit_contact(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = []\n    for i, contact in enumerate(contacts):\n        if any(field.lower().startswith(keyword) for field in contact):\n            found_contacts.append((i, contact))\n    if not found_contacts:\n        print(\"Контакты не найдены.\")\n    else:\n        print(\"Найденные контакты:\")",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "delete_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def delete_contact(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = []\n    for i, contact in enumerate(contacts):\n        if any(field.lower().startswith(keyword) for field in contact):\n            found_contacts.append((i, contact))\n    if not found_contacts:\n        print(\"Контакты не найдены.\")\n    else:\n        print(\"Найденные контакты:\")",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookAdv",
+        "description": "PhoneBook.PhoneBookAdv",
+        "peekOfCode": "def main():\n    # Определение пути к файлу контактов\n    file_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"contacts.csv\")\n    # Загрузка контактов из файла\n    contacts = load_contacts(file_name)\n    while True:\n        # Вывод меню с возможными действиями\n        print(\"1. Вывести все контакты\")\n        print(\"2. Добавить контакт\")\n        print(\"3. Сохранить контакты\")",
+        "detail": "PhoneBook.PhoneBookAdv",
+        "documentation": {}
+    },
+    {
+        "label": "load_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def load_contacts(file_name):\n    contacts = []\n    try:\n        with open(file_name, \"r\", encoding=\"utf-8\") as file:\n            reader = csv.reader(file)\n            for row in reader:\n                contacts.append(row)\n    except FileNotFoundError:\n        pass\n    return contacts",
+        "detail": "PhoneBook.PhoneBookFinal",
+        "documentation": {}
+    },
+    {
+        "label": "save_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def save_contacts(file_name, contacts):\n    with open(file_name, \"w\", encoding=\"utf-8\", newline=\"\") as file:\n        writer = csv.writer(file)\n        writer.writerows(contacts)\n# Функция для вывода контактов на экран\ndef display_contacts(contacts):\n    if not contacts:\n        print(\"Нет доступных контактов.\")\n    else:\n        # Вывод заголовка таблицы контактов",
+        "detail": "PhoneBook.PhoneBookFinal",
+        "documentation": {}
+    },
+    {
+        "label": "display_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def display_contacts(contacts):\n    if not contacts:\n        print(\"Нет доступных контактов.\")\n    else:\n        # Вывод заголовка таблицы контактов\n        print(\"{:<4} {:<14} {:<12} {:<14} {:<18}\".format(\"№\", \"Фамилия\", \"Имя\", \"Отчество\", \"Номер телефона\"))\n        print(\"-\" * 70)\n        # Вывод каждого контакта в форматированной таблице\n        for i, contact in enumerate(contacts, start=1):\n            last_name, first_name, patronymic, phone_number = contact",
+        "detail": "PhoneBook.PhoneBookFinal",
+        "documentation": {}
+    },
+    {
+        "label": "search_contacts",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def search_contacts(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = [contact for contact in contacts if any(field.lower().startswith(keyword) for field in contact)]\n    return found_contacts\n# Функция для добавления нового контакта\ndef add_contact(contacts):\n    last_name = input(\"Введите фамилию: \")\n    first_name = input(\"Введите имя: \")\n    patronymic = input(\"Введите отчество: \")\n    phone_number = input(\"Введите номер телефона: \")",
+        "detail": "PhoneBook.PhoneBookFinal",
+        "documentation": {}
+    },
+    {
+        "label": "add_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def add_contact(contacts):\n    last_name = input(\"Введите фамилию: \")\n    first_name = input(\"Введите имя: \")\n    patronymic = input(\"Введите отчество: \")\n    phone_number = input(\"Введите номер телефона: \")\n    contact = [last_name, first_name, patronymic, phone_number]\n    contacts.append(contact)\n    print(\"Контакт успешно добавлен.\")\n# Функция для редактирования контакта\ndef edit_contact(contacts, keyword):",
+        "detail": "PhoneBook.PhoneBookFinal",
+        "documentation": {}
+    },
+    {
+        "label": "edit_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def edit_contact(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = [(i, contact) for i, contact in enumerate(contacts) if any(field.lower().startswith(keyword) for field in contact)]\n    if not found_contacts:\n        print(\"Контакты не найдены.\")\n    else:\n        print(\"Найденные контакты:\")\n        display_contacts([contact for _, contact in found_contacts])\n        choice = input(\"Введите номер контакта для редактирования: \")\n        if not choice.isdigit() or int(choice) < 1 or int(choice) > len(found_contacts):",
+        "detail": "PhoneBook.PhoneBookFinal",
+        "documentation": {}
+    },
+    {
+        "label": "delete_contact",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def delete_contact(contacts, keyword):\n    keyword = keyword.lower()\n    found_contacts = [(i, contact) for i, contact in enumerate(contacts) if any(field.lower().startswith(keyword) for field in contact)]\n    if not found_contacts:\n        print(\"Контакты не найдены.\")\n    else:\n        print(\"Найденные контакты:\")\n        display_contacts([contact for _, contact in found_contacts])\n        choice = input(\"Введите номер контакта для удаления: \")\n        if not choice.isdigit() or int(choice) < 1 or int(choice) > len(found_contacts):",
+        "detail": "PhoneBook.PhoneBookFinal",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "PhoneBook.PhoneBookFinal",
+        "description": "PhoneBook.PhoneBookFinal",
+        "peekOfCode": "def main():\n    # Определение пути к файлу контактов\n    file_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"contacts.csv\")\n    # Загрузка контактов из файла\n    contacts = load_contacts(file_name)\n    while True:\n        # Вывод меню с возможными действиями\n        print(\"1. Вывести все контакты\")\n        print(\"2. Добавить контакт\")\n        print(\"3. Сохранить контакты\")",
+        "detail": "PhoneBook.PhoneBookFinal",
+        "documentation": {}
+    },
+    {
+        "label": "string_digit",
+        "kind": 5,
+        "importPath": "PY_Homework001.taskHW02",
+        "description": "PY_Homework001.taskHW02",
+        "peekOfCode": "string_digit = input(\"Введите число: \")\ndigit_sum = 0   #сумма цифр числа (число Архимеда)\nfor i in string_digit:\n    digit_sum += int(i)\nprint(\"Сумма цифр числа:\", digit_sum)\nprint(\"Количество цифр числа:\", len(string_digit))\n# Могём вводить число большой длины!",
+        "detail": "PY_Homework001.taskHW02",
+        "documentation": {}
+    },
+    {
+        "label": "digit_sum",
+        "kind": 5,
+        "importPath": "PY_Homework001.taskHW02",
+        "description": "PY_Homework001.taskHW02",
+        "peekOfCode": "digit_sum = 0   #сумма цифр числа (число Архимеда)\nfor i in string_digit:\n    digit_sum += int(i)\nprint(\"Сумма цифр числа:\", digit_sum)\nprint(\"Количество цифр числа:\", len(string_digit))\n# Могём вводить число большой длины!",
+        "detail": "PY_Homework001.taskHW02",
+        "documentation": {}
+    },
+    {
+        "label": "string_digit",
+        "kind": 5,
+        "importPath": "PY_Homework001.taskHW06",
+        "description": "PY_Homework001.taskHW06",
+        "peekOfCode": "string_digit = input(\"Введите шестизначное число: \")\nif len(string_digit) != 6:\n    print(\"Вы ввели не шестизначное число! Повторите ввод!\")\nelse:\n    digit_sum1 = 0\n    digit_sum2 = 0\n    for i in range(3):\n        digit_sum1 += int(string_digit[i])\n        digit_sum2 += int(string_digit[i + 3])\n    if digit_sum1 != digit_sum2:",
+        "detail": "PY_Homework001.taskHW06",
+        "documentation": {}
+    },
+    {
+        "label": "summa_birds",
+        "kind": 5,
+        "importPath": "PY_Homework001.taskHW08",
+        "description": "PY_Homework001.taskHW08",
+        "peekOfCode": "summa_birds = int(input(\"Введите общее количество журавликов, сделанных детьми: \"))\nif (summa_birds % 6) > 0:\n    print(\"Не могут детишки столько сделать!\")\n    print(\"Введите правильное количество журавликов\")\nelse:\n    petya = summa_birds // 6\n    katya = petya * 4\n    print(\"Петя: %d; Катя: %d; Сережа: %d.\" % (petya, katya, petya))",
+        "detail": "PY_Homework001.taskHW08",
+        "documentation": {}
+    },
+    {
+        "label": "broken_chocolate",
+        "kind": 2,
+        "importPath": "PY_Homework001.taskHW08chocolate",
+        "description": "PY_Homework001.taskHW08chocolate",
+        "peekOfCode": "def broken_chocolate(n, m, k):\n    if k == 1:\n        return False\n    elif k > n * m:\n        return False\n    elif k % n == 0 or k % m == 0:\n        return True\n    else:\n        return False\n# Вызываем функцию broken_chocolate и передаем ей аргументы n, m, k",
+        "detail": "PY_Homework001.taskHW08chocolate",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "PY_Homework001.taskHW08chocolate",
+        "description": "PY_Homework001.taskHW08chocolate",
+        "peekOfCode": "n = int(input(\"Количество долек по горизонтали: \"))\nm = int(input(\"Количество долек по вертикали: \"))\nprint(\"Размер вашей шоколадки:\", n, \"x\", m, \"Всего долек в шоколадке:\", n * m)\nk = int(input(\"Введите количество долек, которые хотите отломить за один раз: \"))\n# Наш Гений решил создать функцию, возращающую булевское значение \"истина\" при выпонении условий задачи\n# Да, мы функции не проходили. Однако, я почитал про них + имею опыт кодинга на сях,паскалях и байсиках :)\ndef broken_chocolate(n, m, k):\n    if k == 1:\n        return False\n    elif k > n * m:",
+        "detail": "PY_Homework001.taskHW08chocolate",
+        "documentation": {}
+    },
+    {
+        "label": "m",
+        "kind": 5,
+        "importPath": "PY_Homework001.taskHW08chocolate",
+        "description": "PY_Homework001.taskHW08chocolate",
+        "peekOfCode": "m = int(input(\"Количество долек по вертикали: \"))\nprint(\"Размер вашей шоколадки:\", n, \"x\", m, \"Всего долек в шоколадке:\", n * m)\nk = int(input(\"Введите количество долек, которые хотите отломить за один раз: \"))\n# Наш Гений решил создать функцию, возращающую булевское значение \"истина\" при выпонении условий задачи\n# Да, мы функции не проходили. Однако, я почитал про них + имею опыт кодинга на сях,паскалях и байсиках :)\ndef broken_chocolate(n, m, k):\n    if k == 1:\n        return False\n    elif k > n * m:\n        return False",
+        "detail": "PY_Homework001.taskHW08chocolate",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "PY_Homework001.taskHW08chocolate",
+        "description": "PY_Homework001.taskHW08chocolate",
+        "peekOfCode": "k = int(input(\"Введите количество долек, которые хотите отломить за один раз: \"))\n# Наш Гений решил создать функцию, возращающую булевское значение \"истина\" при выпонении условий задачи\n# Да, мы функции не проходили. Однако, я почитал про них + имею опыт кодинга на сях,паскалях и байсиках :)\ndef broken_chocolate(n, m, k):\n    if k == 1:\n        return False\n    elif k > n * m:\n        return False\n    elif k % n == 0 or k % m == 0:\n        return True",
+        "detail": "PY_Homework001.taskHW08chocolate",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_heavenly_stem_day",
+        "kind": 2,
+        "importPath": "PY_Homework002.bazi",
+        "description": "PY_Homework002.bazi",
+        "peekOfCode": "def calculate_heavenly_stem_day(date):\n    day, month, year = map(int, date.split('.'))\n    heavenly_stem = (year % 10) % 5\n    earthly_branch = (year % 12) - 3\n    day_heavenly_stem = (day + earthly_branch + 1) % 10\n    return heavenly_stem, day_heavenly_stem\nprint(calculate_heavenly_stem_day(\"{0}.{1}.{2}\".format(30, 12, 1975)))",
+        "detail": "PY_Homework002.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "heavenly_stems",
+        "kind": 5,
+        "importPath": "PY_Homework002.bazi",
+        "description": "PY_Homework002.bazi",
+        "peekOfCode": "heavenly_stems = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸']\nearthly_branches = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥']\n# Запрашиваем у пользователя год рождения в григорианском календаре\nyear = int(input(\"Введите год рождения в григорианском календаре: \"))\n# Вычисляем значение \"небесного ствола\" и \"земной ветви\" по заданным формулам\nheavenly_stem = heavenly_stems[(year - 4) % 10]\nearthly_branch = earthly_branches[(year - 4) % 12]\n# Выводим результат\nprint(\"Ваш год рождения по китайскому календарю: {}{}\".format(heavenly_stem, earthly_branch))\n# ----------------------------------------------------------------------------------------------------------------",
+        "detail": "PY_Homework002.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "earthly_branches",
+        "kind": 5,
+        "importPath": "PY_Homework002.bazi",
+        "description": "PY_Homework002.bazi",
+        "peekOfCode": "earthly_branches = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥']\n# Запрашиваем у пользователя год рождения в григорианском календаре\nyear = int(input(\"Введите год рождения в григорианском календаре: \"))\n# Вычисляем значение \"небесного ствола\" и \"земной ветви\" по заданным формулам\nheavenly_stem = heavenly_stems[(year - 4) % 10]\nearthly_branch = earthly_branches[(year - 4) % 12]\n# Выводим результат\nprint(\"Ваш год рождения по китайскому календарю: {}{}\".format(heavenly_stem, earthly_branch))\n# ----------------------------------------------------------------------------------------------------------------\ndef calculate_heavenly_stem_day(date):",
+        "detail": "PY_Homework002.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "year",
+        "kind": 5,
+        "importPath": "PY_Homework002.bazi",
+        "description": "PY_Homework002.bazi",
+        "peekOfCode": "year = int(input(\"Введите год рождения в григорианском календаре: \"))\n# Вычисляем значение \"небесного ствола\" и \"земной ветви\" по заданным формулам\nheavenly_stem = heavenly_stems[(year - 4) % 10]\nearthly_branch = earthly_branches[(year - 4) % 12]\n# Выводим результат\nprint(\"Ваш год рождения по китайскому календарю: {}{}\".format(heavenly_stem, earthly_branch))\n# ----------------------------------------------------------------------------------------------------------------\ndef calculate_heavenly_stem_day(date):\n    day, month, year = map(int, date.split('.'))\n    heavenly_stem = (year % 10) % 5",
+        "detail": "PY_Homework002.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "heavenly_stem",
+        "kind": 5,
+        "importPath": "PY_Homework002.bazi",
+        "description": "PY_Homework002.bazi",
+        "peekOfCode": "heavenly_stem = heavenly_stems[(year - 4) % 10]\nearthly_branch = earthly_branches[(year - 4) % 12]\n# Выводим результат\nprint(\"Ваш год рождения по китайскому календарю: {}{}\".format(heavenly_stem, earthly_branch))\n# ----------------------------------------------------------------------------------------------------------------\ndef calculate_heavenly_stem_day(date):\n    day, month, year = map(int, date.split('.'))\n    heavenly_stem = (year % 10) % 5\n    earthly_branch = (year % 12) - 3\n    day_heavenly_stem = (day + earthly_branch + 1) % 10",
+        "detail": "PY_Homework002.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "earthly_branch",
+        "kind": 5,
+        "importPath": "PY_Homework002.bazi",
+        "description": "PY_Homework002.bazi",
+        "peekOfCode": "earthly_branch = earthly_branches[(year - 4) % 12]\n# Выводим результат\nprint(\"Ваш год рождения по китайскому календарю: {}{}\".format(heavenly_stem, earthly_branch))\n# ----------------------------------------------------------------------------------------------------------------\ndef calculate_heavenly_stem_day(date):\n    day, month, year = map(int, date.split('.'))\n    heavenly_stem = (year % 10) % 5\n    earthly_branch = (year % 12) - 3\n    day_heavenly_stem = (day + earthly_branch + 1) % 10\n    return heavenly_stem, day_heavenly_stem",
+        "detail": "PY_Homework002.bazi",
+        "documentation": {}
+    },
+    {
+        "label": "n_moneys",
+        "kind": 5,
+        "importPath": "PY_Homework002.task10",
+        "description": "PY_Homework002.task10",
+        "peekOfCode": "n_moneys = int(input(\"Введите количество монеток: \"))\n# Генерация списка: орел(0)-решка(1)\nsides = [random.randint(0, 1) for _ in range(n_moneys)]\n# Вывод результата рандома. enumerate - для генерации индексов вместе с элементами списка sides \n# это позволяет  выводить номер каждой монетки, начиная с 1, а не с 0.\nfor i, side in enumerate(sides):\n    print(f\"Монетка {i+1}: {side}\")\n# Подсчет суммы решек\nres_side = sum(sides)\n# Определение минимального значения",
+        "detail": "PY_Homework002.task10",
+        "documentation": {}
+    },
+    {
+        "label": "sides",
+        "kind": 5,
+        "importPath": "PY_Homework002.task10",
+        "description": "PY_Homework002.task10",
+        "peekOfCode": "sides = [random.randint(0, 1) for _ in range(n_moneys)]\n# Вывод результата рандома. enumerate - для генерации индексов вместе с элементами списка sides \n# это позволяет  выводить номер каждой монетки, начиная с 1, а не с 0.\nfor i, side in enumerate(sides):\n    print(f\"Монетка {i+1}: {side}\")\n# Подсчет суммы решек\nres_side = sum(sides)\n# Определение минимального значения\nminimus = min(res_side, n_moneys - res_side)\nprint(\"Количество монеток, которых нужно перевернуть:\", minimus)",
+        "detail": "PY_Homework002.task10",
+        "documentation": {}
+    },
+    {
+        "label": "res_side",
+        "kind": 5,
+        "importPath": "PY_Homework002.task10",
+        "description": "PY_Homework002.task10",
+        "peekOfCode": "res_side = sum(sides)\n# Определение минимального значения\nminimus = min(res_side, n_moneys - res_side)\nprint(\"Количество монеток, которых нужно перевернуть:\", minimus)",
+        "detail": "PY_Homework002.task10",
+        "documentation": {}
+    },
+    {
+        "label": "minimus",
+        "kind": 5,
+        "importPath": "PY_Homework002.task10",
+        "description": "PY_Homework002.task10",
+        "peekOfCode": "minimus = min(res_side, n_moneys - res_side)\nprint(\"Количество монеток, которых нужно перевернуть:\", minimus)",
+        "detail": "PY_Homework002.task10",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt_val",
+        "kind": 5,
+        "importPath": "PY_Homework002.task12",
+        "description": "PY_Homework002.task12",
+        "peekOfCode": "sqrt_val = (sum_xy**2 - 4*mul_xy)**0.5\nx1 = round(mul_xy / ((sum_xy + sqrt_val) / 2))\nx2 = round(mul_xy / ((sum_xy - sqrt_val) / 2))\nprint(\"Одно число:\",x1,\"; другое число:\",x2)",
+        "detail": "PY_Homework002.task12",
+        "documentation": {}
+    },
+    {
+        "label": "x1",
+        "kind": 5,
+        "importPath": "PY_Homework002.task12",
+        "description": "PY_Homework002.task12",
+        "peekOfCode": "x1 = round(mul_xy / ((sum_xy + sqrt_val) / 2))\nx2 = round(mul_xy / ((sum_xy - sqrt_val) / 2))\nprint(\"Одно число:\",x1,\"; другое число:\",x2)",
+        "detail": "PY_Homework002.task12",
+        "documentation": {}
+    },
+    {
+        "label": "x2",
+        "kind": 5,
+        "importPath": "PY_Homework002.task12",
+        "description": "PY_Homework002.task12",
+        "peekOfCode": "x2 = round(mul_xy / ((sum_xy - sqrt_val) / 2))\nprint(\"Одно число:\",x1,\"; другое число:\",x2)",
+        "detail": "PY_Homework002.task12",
+        "documentation": {}
+    },
+    {
+        "label": "prd_digit",
+        "kind": 5,
+        "importPath": "PY_Homework002.task14",
+        "description": "PY_Homework002.task14",
+        "peekOfCode": "prd_digit = int(input(\"Введите предел расчета возведения в степень, не более: \"))\ni = 0\nwhile 2**i < prd_digit:\n    print(2**i)\n    i += 1",
+        "detail": "PY_Homework002.task14",
+        "documentation": {}
+    },
+    {
+        "label": "i",
+        "kind": 5,
+        "importPath": "PY_Homework002.task14",
+        "description": "PY_Homework002.task14",
+        "peekOfCode": "i = 0\nwhile 2**i < prd_digit:\n    print(2**i)\n    i += 1",
+        "detail": "PY_Homework002.task14",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "PY_Homework003.task16",
+        "description": "PY_Homework003.task16",
+        "peekOfCode": "n = int(input(\"Введите размер массива: \"))\narr = [random.randint(0, 9) for _ in range(n)] #думаю, что с генератором случайных чисел будет по-интереснее\nprint(\"Сгенерированный массив:\", arr)\nnum = int(input(\"Введите число, которое нужно найти в массиве: \"))\ncount = arr.count(num)\nprint(\"Число\", num, \"встречается в массиве\", count, \"раз(а).\")",
+        "detail": "PY_Homework003.task16",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "PY_Homework003.task16",
+        "description": "PY_Homework003.task16",
+        "peekOfCode": "arr = [random.randint(0, 9) for _ in range(n)] #думаю, что с генератором случайных чисел будет по-интереснее\nprint(\"Сгенерированный массив:\", arr)\nnum = int(input(\"Введите число, которое нужно найти в массиве: \"))\ncount = arr.count(num)\nprint(\"Число\", num, \"встречается в массиве\", count, \"раз(а).\")",
+        "detail": "PY_Homework003.task16",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "PY_Homework003.task16",
+        "description": "PY_Homework003.task16",
+        "peekOfCode": "num = int(input(\"Введите число, которое нужно найти в массиве: \"))\ncount = arr.count(num)\nprint(\"Число\", num, \"встречается в массиве\", count, \"раз(а).\")",
+        "detail": "PY_Homework003.task16",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "PY_Homework003.task16",
+        "description": "PY_Homework003.task16",
+        "peekOfCode": "count = arr.count(num)\nprint(\"Число\", num, \"встречается в массиве\", count, \"раз(а).\")",
+        "detail": "PY_Homework003.task16",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "PY_Homework003.task18",
+        "description": "PY_Homework003.task18",
+        "peekOfCode": "n = int(input(\"Введите размер массива: \"))\narr = [random.randint(0, 100) for _ in range(n)] #думаю, что с генератором случайных чисел будет по-интереснее\nprint(\"Сгенерированный массив:\", arr)\nnum_input = input(\"Введите число: \")\nnum = int(num_input)\nclosest_num = None  # переменная для хранения наиболее близкого числа\nclosest_distance = float('inf')  # переменная для хранения наименьшего расстояния,и присваиваем значение бесконечность+\nfor element in arr:\n    distance = abs(element - num)  # расстояние между элементом и заданным числом\n    if distance < closest_distance:",
+        "detail": "PY_Homework003.task18",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "PY_Homework003.task18",
+        "description": "PY_Homework003.task18",
+        "peekOfCode": "arr = [random.randint(0, 100) for _ in range(n)] #думаю, что с генератором случайных чисел будет по-интереснее\nprint(\"Сгенерированный массив:\", arr)\nnum_input = input(\"Введите число: \")\nnum = int(num_input)\nclosest_num = None  # переменная для хранения наиболее близкого числа\nclosest_distance = float('inf')  # переменная для хранения наименьшего расстояния,и присваиваем значение бесконечность+\nfor element in arr:\n    distance = abs(element - num)  # расстояние между элементом и заданным числом\n    if distance < closest_distance:\n        closest_distance = distance",
+        "detail": "PY_Homework003.task18",
+        "documentation": {}
+    },
+    {
+        "label": "num_input",
+        "kind": 5,
+        "importPath": "PY_Homework003.task18",
+        "description": "PY_Homework003.task18",
+        "peekOfCode": "num_input = input(\"Введите число: \")\nnum = int(num_input)\nclosest_num = None  # переменная для хранения наиболее близкого числа\nclosest_distance = float('inf')  # переменная для хранения наименьшего расстояния,и присваиваем значение бесконечность+\nfor element in arr:\n    distance = abs(element - num)  # расстояние между элементом и заданным числом\n    if distance < closest_distance:\n        closest_distance = distance\n        closest_num = element\nprint(\"Наиболее близкое число в массиве к числу:\", num, \"- это:\", closest_num)",
+        "detail": "PY_Homework003.task18",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "PY_Homework003.task18",
+        "description": "PY_Homework003.task18",
+        "peekOfCode": "num = int(num_input)\nclosest_num = None  # переменная для хранения наиболее близкого числа\nclosest_distance = float('inf')  # переменная для хранения наименьшего расстояния,и присваиваем значение бесконечность+\nfor element in arr:\n    distance = abs(element - num)  # расстояние между элементом и заданным числом\n    if distance < closest_distance:\n        closest_distance = distance\n        closest_num = element\nprint(\"Наиболее близкое число в массиве к числу:\", num, \"- это:\", closest_num)",
+        "detail": "PY_Homework003.task18",
+        "documentation": {}
+    },
+    {
+        "label": "closest_num",
+        "kind": 5,
+        "importPath": "PY_Homework003.task18",
+        "description": "PY_Homework003.task18",
+        "peekOfCode": "closest_num = None  # переменная для хранения наиболее близкого числа\nclosest_distance = float('inf')  # переменная для хранения наименьшего расстояния,и присваиваем значение бесконечность+\nfor element in arr:\n    distance = abs(element - num)  # расстояние между элементом и заданным числом\n    if distance < closest_distance:\n        closest_distance = distance\n        closest_num = element\nprint(\"Наиболее близкое число в массиве к числу:\", num, \"- это:\", closest_num)",
+        "detail": "PY_Homework003.task18",
+        "documentation": {}
+    },
+    {
+        "label": "closest_distance",
+        "kind": 5,
+        "importPath": "PY_Homework003.task18",
+        "description": "PY_Homework003.task18",
+        "peekOfCode": "closest_distance = float('inf')  # переменная для хранения наименьшего расстояния,и присваиваем значение бесконечность+\nfor element in arr:\n    distance = abs(element - num)  # расстояние между элементом и заданным числом\n    if distance < closest_distance:\n        closest_distance = distance\n        closest_num = element\nprint(\"Наиболее близкое число в массиве к числу:\", num, \"- это:\", closest_num)",
+        "detail": "PY_Homework003.task18",
+        "documentation": {}
+    },
+    {
+        "label": "score_table",
+        "kind": 5,
+        "importPath": "PY_Homework003.task20",
+        "description": "PY_Homework003.task20",
+        "peekOfCode": "score_table = {\n    'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f': 4, 'g': 2, 'h': 4, 'i': 1,\n    'j': 8, 'k': 5, 'l': 1, 'm': 3, 'n': 1, 'o': 1, 'p': 3, 'q': 10, 'r': 1,\n    's': 1, 't': 1, 'u': 1, 'v': 4, 'w': 4, 'x': 8, 'y': 4, 'z': 10,\n    'а': 1, 'б': 3, 'в': 1, 'г': 3, 'д': 2, 'е': 1, 'ё': 3, 'ж': 5, 'з': 5,\n    'и': 1, 'й': 4, 'к': 2, 'л': 2, 'м': 3, 'н': 1, 'о': 1, 'п': 2, 'р': 1,\n    'с': 1, 'т': 1, 'у': 2, 'ф': 10, 'х': 5, 'ц': 5, 'ч': 5, 'ш': 8, 'щ': 10,\n    'ъ': 10, 'ы': 4, 'ь': 3, 'э': 8, 'ю': 8, 'я': 3\n}\nword_input = input(\"Введите слово или предложение: \")",
+        "detail": "PY_Homework003.task20",
+        "documentation": {}
+    },
+    {
+        "label": "word_input",
+        "kind": 5,
+        "importPath": "PY_Homework003.task20",
+        "description": "PY_Homework003.task20",
+        "peekOfCode": "word_input = input(\"Введите слово или предложение: \")\nword = word_input.lower()\nscore = 0\nword_score = \", \".join(f\"{char} ({score_table.get(char, 0)})\" for char in word)\nscore = sum(score_table.get(char, 0) for char in word)\nprint(f\"Введенное слово или предложение: {word_input}\")\nprint(f\"По-буквенная детализация ценности: {word_score}\")\nprint(f\"Общая стоимость слова или предложения: {score}\")",
+        "detail": "PY_Homework003.task20",
+        "documentation": {}
+    },
+    {
+        "label": "word",
+        "kind": 5,
+        "importPath": "PY_Homework003.task20",
+        "description": "PY_Homework003.task20",
+        "peekOfCode": "word = word_input.lower()\nscore = 0\nword_score = \", \".join(f\"{char} ({score_table.get(char, 0)})\" for char in word)\nscore = sum(score_table.get(char, 0) for char in word)\nprint(f\"Введенное слово или предложение: {word_input}\")\nprint(f\"По-буквенная детализация ценности: {word_score}\")\nprint(f\"Общая стоимость слова или предложения: {score}\")",
+        "detail": "PY_Homework003.task20",
+        "documentation": {}
+    },
+    {
+        "label": "score",
+        "kind": 5,
+        "importPath": "PY_Homework003.task20",
+        "description": "PY_Homework003.task20",
+        "peekOfCode": "score = 0\nword_score = \", \".join(f\"{char} ({score_table.get(char, 0)})\" for char in word)\nscore = sum(score_table.get(char, 0) for char in word)\nprint(f\"Введенное слово или предложение: {word_input}\")\nprint(f\"По-буквенная детализация ценности: {word_score}\")\nprint(f\"Общая стоимость слова или предложения: {score}\")",
+        "detail": "PY_Homework003.task20",
+        "documentation": {}
+    },
+    {
+        "label": "word_score",
+        "kind": 5,
+        "importPath": "PY_Homework003.task20",
+        "description": "PY_Homework003.task20",
+        "peekOfCode": "word_score = \", \".join(f\"{char} ({score_table.get(char, 0)})\" for char in word)\nscore = sum(score_table.get(char, 0) for char in word)\nprint(f\"Введенное слово или предложение: {word_input}\")\nprint(f\"По-буквенная детализация ценности: {word_score}\")\nprint(f\"Общая стоимость слова или предложения: {score}\")",
+        "detail": "PY_Homework003.task20",
+        "documentation": {}
+    },
+    {
+        "label": "score",
+        "kind": 5,
+        "importPath": "PY_Homework003.task20",
+        "description": "PY_Homework003.task20",
+        "peekOfCode": "score = sum(score_table.get(char, 0) for char in word)\nprint(f\"Введенное слово или предложение: {word_input}\")\nprint(f\"По-буквенная детализация ценности: {word_score}\")\nprint(f\"Общая стоимость слова или предложения: {score}\")",
+        "detail": "PY_Homework003.task20",
+        "documentation": {}
+    },
+    {
+        "label": "size_first",
+        "kind": 5,
+        "importPath": "PY_Homework004.task22",
+        "description": "PY_Homework004.task22",
+        "peekOfCode": "size_first = int(input(\"Введите размер первого массива: \"))\nsize_second = int(input(\"Введите размер второго массива: \"))\n# Создание рандомных массивов\narr_first = [random.randint(0, 100) for _ in range(size_first)]\narr_second = [random.randint(0, 100) for _ in range(size_second)]\n# Вывод значений массивов\nprint(\"Значения первого массива:\", arr_first)\nprint(\"Значения второго массива:\", arr_second)\n# Поиск пересечения двух множеств и преобразование его в отсортированный список\ncommon_list = sorted(list(set(arr_first).intersection(arr_second)))",
+        "detail": "PY_Homework004.task22",
+        "documentation": {}
+    },
+    {
+        "label": "size_second",
+        "kind": 5,
+        "importPath": "PY_Homework004.task22",
+        "description": "PY_Homework004.task22",
+        "peekOfCode": "size_second = int(input(\"Введите размер второго массива: \"))\n# Создание рандомных массивов\narr_first = [random.randint(0, 100) for _ in range(size_first)]\narr_second = [random.randint(0, 100) for _ in range(size_second)]\n# Вывод значений массивов\nprint(\"Значения первого массива:\", arr_first)\nprint(\"Значения второго массива:\", arr_second)\n# Поиск пересечения двух множеств и преобразование его в отсортированный список\ncommon_list = sorted(list(set(arr_first).intersection(arr_second)))\n# Проверка наличия общих элементов и вывод результата",
+        "detail": "PY_Homework004.task22",
+        "documentation": {}
+    },
+    {
+        "label": "arr_first",
+        "kind": 5,
+        "importPath": "PY_Homework004.task22",
+        "description": "PY_Homework004.task22",
+        "peekOfCode": "arr_first = [random.randint(0, 100) for _ in range(size_first)]\narr_second = [random.randint(0, 100) for _ in range(size_second)]\n# Вывод значений массивов\nprint(\"Значения первого массива:\", arr_first)\nprint(\"Значения второго массива:\", arr_second)\n# Поиск пересечения двух множеств и преобразование его в отсортированный список\ncommon_list = sorted(list(set(arr_first).intersection(arr_second)))\n# Проверка наличия общих элементов и вывод результата\nif len(common_list) == 0:\n    print(\"Общих значений в двух массивах нет\")",
+        "detail": "PY_Homework004.task22",
+        "documentation": {}
+    },
+    {
+        "label": "arr_second",
+        "kind": 5,
+        "importPath": "PY_Homework004.task22",
+        "description": "PY_Homework004.task22",
+        "peekOfCode": "arr_second = [random.randint(0, 100) for _ in range(size_second)]\n# Вывод значений массивов\nprint(\"Значения первого массива:\", arr_first)\nprint(\"Значения второго массива:\", arr_second)\n# Поиск пересечения двух множеств и преобразование его в отсортированный список\ncommon_list = sorted(list(set(arr_first).intersection(arr_second)))\n# Проверка наличия общих элементов и вывод результата\nif len(common_list) == 0:\n    print(\"Общих значений в двух массивах нет\")\nelse:",
+        "detail": "PY_Homework004.task22",
+        "documentation": {}
+    },
+    {
+        "label": "common_list",
+        "kind": 5,
+        "importPath": "PY_Homework004.task22",
+        "description": "PY_Homework004.task22",
+        "peekOfCode": "common_list = sorted(list(set(arr_first).intersection(arr_second)))\n# Проверка наличия общих элементов и вывод результата\nif len(common_list) == 0:\n    print(\"Общих значений в двух массивах нет\")\nelse:\n    print(\"Общие значения двух массивов, отсортированные по возрастанию:\", common_list)",
+        "detail": "PY_Homework004.task22",
+        "documentation": {}
+    },
+    {
+        "label": "size",
+        "kind": 5,
+        "importPath": "PY_Homework004.task24",
+        "description": "PY_Homework004.task24",
+        "peekOfCode": "size = int(input(\"Введите размер списка: \"))\n# Создание рандомного списка\narr = [random.randint(0, 10) for _ in range(size)]\n# Вывод значений списка\nprint(\"Значения списка:\", arr)\n# Создание списка сумм троек (триад)\nres = [sum(arr[i:i+3]) for i in range(size)]\n# Вывод списка троек\nprint(\"Тройные суммы:\", res)",
+        "detail": "PY_Homework004.task24",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "PY_Homework004.task24",
+        "description": "PY_Homework004.task24",
+        "peekOfCode": "arr = [random.randint(0, 10) for _ in range(size)]\n# Вывод значений списка\nprint(\"Значения списка:\", arr)\n# Создание списка сумм троек (триад)\nres = [sum(arr[i:i+3]) for i in range(size)]\n# Вывод списка троек\nprint(\"Тройные суммы:\", res)",
+        "detail": "PY_Homework004.task24",
+        "documentation": {}
+    },
+    {
+        "label": "res",
+        "kind": 5,
+        "importPath": "PY_Homework004.task24",
+        "description": "PY_Homework004.task24",
+        "peekOfCode": "res = [sum(arr[i:i+3]) for i in range(size)]\n# Вывод списка троек\nprint(\"Тройные суммы:\", res)",
+        "detail": "PY_Homework004.task24",
+        "documentation": {}
+    },
+    {
+        "label": "power",
+        "kind": 2,
+        "importPath": "PY_Homework005.task26",
+        "description": "PY_Homework005.task26",
+        "peekOfCode": "def power(A, B):\n    if B == 0:\n        return 1\n    elif B % 2 == 0:\n        return power(A*A, B//2)\n    else:\n        return A * power(A, B-1)\nprint(power(int(input(\"Введите основание:\")),int(input(\"Введите показатель степени:\"))))",
+        "detail": "PY_Homework005.task26",
+        "documentation": {}
+    },
+    {
+        "label": "sum",
+        "kind": 2,
+        "importPath": "PY_Homework005.task28",
+        "description": "PY_Homework005.task28",
+        "peekOfCode": "def sum(a, b):\n    # если один из аргументов равен нулю, то возвращаем второй аргумент\n    if a == 0:\n        return b\n    if b == 0:\n        return a\n    # прибавляем 1 к обоим аргументам и вызываем функцию с новыми значениями\n    return sum(a + 1, b - 1)\nprint(sum(int(input(\"Введите первое слогаемое:\")),int(input(\"Введите второе слогаемое:\"))))",
+        "detail": "PY_Homework005.task28",
+        "documentation": {}
+    },
+    {
+        "label": "a1",
+        "kind": 5,
+        "importPath": "PY_Homework006.task30",
+        "description": "PY_Homework006.task30",
+        "peekOfCode": "a1 = int(input(\"Введите первый элемент прогрессии: \"))\nd = int(input(\"Введите разность прогрессии: \"))\nn = int(input(\"Введите количество элементов в прогрессии: \"))\narr = [str(a1 + (i-1)*d) for i in range(1, n+1)]\nprint(\" \".join(arr))",
+        "detail": "PY_Homework006.task30",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "PY_Homework006.task30",
+        "description": "PY_Homework006.task30",
+        "peekOfCode": "d = int(input(\"Введите разность прогрессии: \"))\nn = int(input(\"Введите количество элементов в прогрессии: \"))\narr = [str(a1 + (i-1)*d) for i in range(1, n+1)]\nprint(\" \".join(arr))",
+        "detail": "PY_Homework006.task30",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "PY_Homework006.task30",
+        "description": "PY_Homework006.task30",
+        "peekOfCode": "n = int(input(\"Введите количество элементов в прогрессии: \"))\narr = [str(a1 + (i-1)*d) for i in range(1, n+1)]\nprint(\" \".join(arr))",
+        "detail": "PY_Homework006.task30",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "PY_Homework006.task30",
+        "description": "PY_Homework006.task30",
+        "peekOfCode": "arr = [str(a1 + (i-1)*d) for i in range(1, n+1)]\nprint(\" \".join(arr))",
+        "detail": "PY_Homework006.task30",
+        "documentation": {}
+    },
+    {
+        "label": "length",
+        "kind": 5,
+        "importPath": "PY_Homework006.task32",
+        "description": "PY_Homework006.task32",
+        "peekOfCode": "length = int(input(\"Введите длину списка: \"))\n# Создать случайный список чисел указанной длины\nrandom_list = [random.randint(-10, 10) for _ in range(length)]\nprint(\"Случайный список:\", random_list)\n# Получить минимальное и максимальное значения для диапазона\nmin_value = int(input(\"Введите минимальное значение: \"))\nmax_value = int(input(\"Введите максимальное значение: \"))\n# Проверить, что максимальное значение больше или равно минимальному\nif max_value < min_value:\n    raise ValueError(\"Максимальное значение должно быть больше или равно минимальному\")",
+        "detail": "PY_Homework006.task32",
+        "documentation": {}
+    },
+    {
+        "label": "random_list",
+        "kind": 5,
+        "importPath": "PY_Homework006.task32",
+        "description": "PY_Homework006.task32",
+        "peekOfCode": "random_list = [random.randint(-10, 10) for _ in range(length)]\nprint(\"Случайный список:\", random_list)\n# Получить минимальное и максимальное значения для диапазона\nmin_value = int(input(\"Введите минимальное значение: \"))\nmax_value = int(input(\"Введите максимальное значение: \"))\n# Проверить, что максимальное значение больше или равно минимальному\nif max_value < min_value:\n    raise ValueError(\"Максимальное значение должно быть больше или равно минимальному\")\n# Найти элементы списка, которые соответствуют заданному диапазону\nmatching_indices = [i for i, x in enumerate(random_list) if min_value <= x <= max_value]",
+        "detail": "PY_Homework006.task32",
+        "documentation": {}
+    },
+    {
+        "label": "min_value",
+        "kind": 5,
+        "importPath": "PY_Homework006.task32",
+        "description": "PY_Homework006.task32",
+        "peekOfCode": "min_value = int(input(\"Введите минимальное значение: \"))\nmax_value = int(input(\"Введите максимальное значение: \"))\n# Проверить, что максимальное значение больше или равно минимальному\nif max_value < min_value:\n    raise ValueError(\"Максимальное значение должно быть больше или равно минимальному\")\n# Найти элементы списка, которые соответствуют заданному диапазону\nmatching_indices = [i for i, x in enumerate(random_list) if min_value <= x <= max_value]\n# Вывести итоговый список и соответствующие элементы\nprint(f\"Диапазон значений: [{min_value}, {max_value}]\")\nprint(f\"Индексы соответствующих элементов: {matching_indices}\")",
+        "detail": "PY_Homework006.task32",
+        "documentation": {}
+    },
+    {
+        "label": "max_value",
+        "kind": 5,
+        "importPath": "PY_Homework006.task32",
+        "description": "PY_Homework006.task32",
+        "peekOfCode": "max_value = int(input(\"Введите максимальное значение: \"))\n# Проверить, что максимальное значение больше или равно минимальному\nif max_value < min_value:\n    raise ValueError(\"Максимальное значение должно быть больше или равно минимальному\")\n# Найти элементы списка, которые соответствуют заданному диапазону\nmatching_indices = [i for i, x in enumerate(random_list) if min_value <= x <= max_value]\n# Вывести итоговый список и соответствующие элементы\nprint(f\"Диапазон значений: [{min_value}, {max_value}]\")\nprint(f\"Индексы соответствующих элементов: {matching_indices}\")",
+        "detail": "PY_Homework006.task32",
+        "documentation": {}
+    },
+    {
+        "label": "matching_indices",
+        "kind": 5,
+        "importPath": "PY_Homework006.task32",
+        "description": "PY_Homework006.task32",
+        "peekOfCode": "matching_indices = [i for i, x in enumerate(random_list) if min_value <= x <= max_value]\n# Вывести итоговый список и соответствующие элементы\nprint(f\"Диапазон значений: [{min_value}, {max_value}]\")\nprint(f\"Индексы соответствующих элементов: {matching_indices}\")",
+        "detail": "PY_Homework006.task32",
+        "documentation": {}
+    },
+    {
+        "label": "my_factorial",
+        "kind": 2,
+        "importPath": "PY_Lesson003.lesson01",
+        "description": "PY_Lesson003.lesson01",
+        "peekOfCode": "def my_factorial(n, y=\"Fill now!\"):\n    if n == 0:\n        return 1\n    else:\n        return n * my_factorial(n-1)\na = int(input(\"Введите число: \"))\nprint(my_factorial(a))",
+        "detail": "PY_Lesson003.lesson01",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "PY_Lesson003.lesson01",
+        "description": "PY_Lesson003.lesson01",
+        "peekOfCode": "a = int(input(\"Введите число: \"))\nprint(my_factorial(a))",
+        "detail": "PY_Lesson003.lesson01",
+        "documentation": {}
+    },
+    {
+        "label": "sum_str",
+        "kind": 2,
+        "importPath": "PY_Lesson003.lesson02",
+        "description": "PY_Lesson003.lesson02",
+        "peekOfCode": "def sum_str(*args):\n    res = \"\"\n    for i in args:\n        if isinstance(i, str):\n            res += i\n        else:\n            res += str(i)\n    return res\nprint(sum_str(\"c\",\"e\",\"f\",\"g\",\"h\"))\nprint(sum_str(1,2,3,4,5,6,7,8,9,10,11,12,13))",
+        "detail": "PY_Lesson003.lesson02",
+        "documentation": {}
+    },
+    {
+        "label": "max1",
+        "kind": 2,
+        "importPath": "PY_Lesson003.lesson03",
+        "description": "PY_Lesson003.lesson03",
+        "peekOfCode": "def max1(a,b):\n    if a>b:\n        return a\n    return b",
+        "detail": "PY_Lesson003.lesson03",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "PY_Lesson004.lesson4_01",
+        "description": "PY_Lesson004.lesson4_01",
+        "peekOfCode": "numbers = [1, 2, 3, 5, 8, 15, 23, 38]\n# Фильтруем список и выбираем только четные числа\nfiltered_numbers = filter(lambda x: x % 2 == 0, numbers)\n# Применяем лямбда-функцию для составления списка пар (число, квадрат числа)\nresult = map(lambda x: (x, x**2), filtered_numbers)\n# Преобразуем результат в список\nresult_list = list(result)\nprint(result_list)  # Вывод: [(2, 4), (8, 64), (38, 1444)]",
+        "detail": "PY_Lesson004.lesson4_01",
+        "documentation": {}
+    },
+    {
+        "label": "filtered_numbers",
+        "kind": 5,
+        "importPath": "PY_Lesson004.lesson4_01",
+        "description": "PY_Lesson004.lesson4_01",
+        "peekOfCode": "filtered_numbers = filter(lambda x: x % 2 == 0, numbers)\n# Применяем лямбда-функцию для составления списка пар (число, квадрат числа)\nresult = map(lambda x: (x, x**2), filtered_numbers)\n# Преобразуем результат в список\nresult_list = list(result)\nprint(result_list)  # Вывод: [(2, 4), (8, 64), (38, 1444)]",
+        "detail": "PY_Lesson004.lesson4_01",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "PY_Lesson004.lesson4_01",
+        "description": "PY_Lesson004.lesson4_01",
+        "peekOfCode": "result = map(lambda x: (x, x**2), filtered_numbers)\n# Преобразуем результат в список\nresult_list = list(result)\nprint(result_list)  # Вывод: [(2, 4), (8, 64), (38, 1444)]",
+        "detail": "PY_Lesson004.lesson4_01",
+        "documentation": {}
+    },
+    {
+        "label": "result_list",
+        "kind": 5,
+        "importPath": "PY_Lesson004.lesson4_01",
+        "description": "PY_Lesson004.lesson4_01",
+        "peekOfCode": "result_list = list(result)\nprint(result_list)  # Вывод: [(2, 4), (8, 64), (38, 1444)]",
+        "detail": "PY_Lesson004.lesson4_01",
+        "documentation": {}
+    },
+    {
+        "label": "numbers_str",
+        "kind": 5,
+        "importPath": "PY_Lesson004.lesson4_02",
+        "description": "PY_Lesson004.lesson4_02",
+        "peekOfCode": "numbers_str = input(\"Введите набор чисел, разделенных пробелами: \")\n# Разбиваем строку на список строк, используя пробел как разделитель\nnumbers_list_str = numbers_str.split()\n# Преобразуем список строк в список чисел\nnumbers_list = list(map(lambda x: int(x), numbers_list_str))\nprint(numbers_list)",
+        "detail": "PY_Lesson004.lesson4_02",
+        "documentation": {}
+    },
+    {
+        "label": "numbers_list_str",
+        "kind": 5,
+        "importPath": "PY_Lesson004.lesson4_02",
+        "description": "PY_Lesson004.lesson4_02",
+        "peekOfCode": "numbers_list_str = numbers_str.split()\n# Преобразуем список строк в список чисел\nnumbers_list = list(map(lambda x: int(x), numbers_list_str))\nprint(numbers_list)",
+        "detail": "PY_Lesson004.lesson4_02",
+        "documentation": {}
+    },
+    {
+        "label": "numbers_list",
+        "kind": 5,
+        "importPath": "PY_Lesson004.lesson4_02",
+        "description": "PY_Lesson004.lesson4_02",
+        "peekOfCode": "numbers_list = list(map(lambda x: int(x), numbers_list_str))\nprint(numbers_list)",
+        "detail": "PY_Lesson004.lesson4_02",
+        "documentation": {}
+    },
+    {
+        "label": "norma",
+        "kind": 5,
+        "importPath": "PY_Seminar001.task001",
+        "description": "PY_Seminar001.task001",
+        "peekOfCode": "norma = int(input(\"Норатив расстояния в день (км.):\"))\nfact = int(input(\"Введите расстояние, которое проехала машина (км.):\"))\n# result_time = ceil(fact / norma)\nresult_time = (fact + norma - 1) // norma\nprint(\"Машине потребуется: \", result_time, \" дней\")",
+        "detail": "PY_Seminar001.task001",
+        "documentation": {}
+    },
+    {
+        "label": "fact",
+        "kind": 5,
+        "importPath": "PY_Seminar001.task001",
+        "description": "PY_Seminar001.task001",
+        "peekOfCode": "fact = int(input(\"Введите расстояние, которое проехала машина (км.):\"))\n# result_time = ceil(fact / norma)\nresult_time = (fact + norma - 1) // norma\nprint(\"Машине потребуется: \", result_time, \" дней\")",
+        "detail": "PY_Seminar001.task001",
+        "documentation": {}
+    },
+    {
+        "label": "result_time",
+        "kind": 5,
+        "importPath": "PY_Seminar001.task001",
+        "description": "PY_Seminar001.task001",
+        "peekOfCode": "result_time = (fact + norma - 1) // norma\nprint(\"Машине потребуется: \", result_time, \" дней\")",
+        "detail": "PY_Seminar001.task001",
+        "documentation": {}
+    },
+    {
+        "label": "class_A",
+        "kind": 5,
+        "importPath": "PY_Seminar001.task003",
+        "description": "PY_Seminar001.task003",
+        "peekOfCode": "class_A = int(input(\"Введите кол-во уч-ся в классе А: \"))\nclass_B = int(input(\"Введите кол-во уч-ся в классе B: \"))\nclass_C = int(input(\"Введите кол-во уч-ся в классе C: \"))\ntable_summ = ((class_A + 1) // 2) + ((class_B + 1) // 2) + ((class_C + 1) // 2)\nprint(table_summ)",
+        "detail": "PY_Seminar001.task003",
+        "documentation": {}
+    },
+    {
+        "label": "class_B",
+        "kind": 5,
+        "importPath": "PY_Seminar001.task003",
+        "description": "PY_Seminar001.task003",
+        "peekOfCode": "class_B = int(input(\"Введите кол-во уч-ся в классе B: \"))\nclass_C = int(input(\"Введите кол-во уч-ся в классе C: \"))\ntable_summ = ((class_A + 1) // 2) + ((class_B + 1) // 2) + ((class_C + 1) // 2)\nprint(table_summ)",
+        "detail": "PY_Seminar001.task003",
+        "documentation": {}
+    },
+    {
+        "label": "class_C",
+        "kind": 5,
+        "importPath": "PY_Seminar001.task003",
+        "description": "PY_Seminar001.task003",
+        "peekOfCode": "class_C = int(input(\"Введите кол-во уч-ся в классе C: \"))\ntable_summ = ((class_A + 1) // 2) + ((class_B + 1) // 2) + ((class_C + 1) // 2)\nprint(table_summ)",
+        "detail": "PY_Seminar001.task003",
+        "documentation": {}
+    },
+    {
+        "label": "table_summ",
+        "kind": 5,
+        "importPath": "PY_Seminar001.task003",
+        "description": "PY_Seminar001.task003",
+        "peekOfCode": "table_summ = ((class_A + 1) // 2) + ((class_B + 1) // 2) + ((class_C + 1) // 2)\nprint(table_summ)",
+        "detail": "PY_Seminar001.task003",
+        "documentation": {}
+    },
+    {
+        "label": "input_num",
+        "kind": 5,
+        "importPath": "PY_Seminar002.task09",
+        "description": "PY_Seminar002.task09",
+        "peekOfCode": "input_num = int(input(\"Введите целое, неотрицательное число: \"))\nif input_num < 0:\n    print(\"Ошибка: введено отрицательное число\")\nelse:\n    fctrl_num = 1\n    i = 1\n    while i <= input_num:\n        fctrl_num *= i\n        i += 1\n    print(\"Факториал числа\", input_num, \"!=\", fctrl_num)",
+        "detail": "PY_Seminar002.task09",
+        "documentation": {}
+    },
+    {
+        "label": "fib_index",
+        "kind": 2,
+        "importPath": "PY_Seminar002.task11",
+        "description": "PY_Seminar002.task11",
+        "peekOfCode": "def fib_index(A):\n    # Начальные значения чисел Фибоначчи\n    fib_n_2, fib_n_1 = 0, 1\n    # Первое число Фибоначчи имеет индекс 1\n    index = 2\n    # Пока текущее число Фибоначчи меньше или равно A\n    while fib_n_1 <= A:\n        # Если текущее число Фибоначчи равно A, то возвращаем его индекс\n        if fib_n_1 == A:\n            return index",
+        "detail": "PY_Seminar002.task11",
+        "documentation": {}
+    },
+    {
+        "label": "n_days",
+        "kind": 5,
+        "importPath": "PY_Seminar002.task13",
+        "description": "PY_Seminar002.task13",
+        "peekOfCode": "n_days = int(input(\"Введите количество дней (1-100): \"))\n# Проверить ввод на исключительную ситуацию\ntry:\n    if n_days < 1 or n_days > 100:\n        raise ValueError(\"Количество дней должно быть от 1 до 100.\")\nexcept ValueError:\n    print(\"Неверный Ввод. Количество дней должно быть целым числом от 1 до 100.\")\n    exit()\n# Инициализировать переменные\nmaxi_dlt = 0",
+        "detail": "PY_Seminar002.task13",
+        "documentation": {}
+    },
+    {
+        "label": "maxi_dlt",
+        "kind": 5,
+        "importPath": "PY_Seminar002.task13",
+        "description": "PY_Seminar002.task13",
+        "peekOfCode": "maxi_dlt = 0\npls_period = 0\n# Цикл чередования дней\nfor day in range(n_days):\n    # Генерация случайной температуры  дня\n    t_day = random.randint(-50, 50)\n    # Вывод сгенерированной температуры\n    print(f\"День {day+1}: {t_day}\")\n    # Выбор дней оттепели\n    if t_day > 0:",
+        "detail": "PY_Seminar002.task13",
+        "documentation": {}
+    },
+    {
+        "label": "pls_period",
+        "kind": 5,
+        "importPath": "PY_Seminar002.task13",
+        "description": "PY_Seminar002.task13",
+        "peekOfCode": "pls_period = 0\n# Цикл чередования дней\nfor day in range(n_days):\n    # Генерация случайной температуры  дня\n    t_day = random.randint(-50, 50)\n    # Вывод сгенерированной температуры\n    print(f\"День {day+1}: {t_day}\")\n    # Выбор дней оттепели\n    if t_day > 0:\n        pls_period += 1",
+        "detail": "PY_Seminar002.task13",
+        "documentation": {}
+    },
+    {
+        "label": "input_string",
+        "kind": 5,
+        "importPath": "PY_Seminar003.task17",
+        "description": "PY_Seminar003.task17",
+        "peekOfCode": "input_string = input(\"Введите список чисел, разделенных пробелом: \")\n# создаем список элементов, вводимых с консоли через пробел\nnums = [int(x) for x in input_string.split()]\n# создаем множество и передаем в него список элементов\n# т.к. ножество может иметь только уникальные элементы,\n# то получаем отсеиваем все повторяющиеся\nunique_nums = set(nums)\n# определяем размер(количество элементов) множества\ncount = len(unique_nums)\n# выводим результат",
+        "detail": "PY_Seminar003.task17",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "PY_Seminar003.task17",
+        "description": "PY_Seminar003.task17",
+        "peekOfCode": "nums = [int(x) for x in input_string.split()]\n# создаем множество и передаем в него список элементов\n# т.к. ножество может иметь только уникальные элементы,\n# то получаем отсеиваем все повторяющиеся\nunique_nums = set(nums)\n# определяем размер(количество элементов) множества\ncount = len(unique_nums)\n# выводим результат\nprint(\"Количество уникальных элементов:\", count)\nprint(\"Список уникальных элементов:\", *unique_nums)",
+        "detail": "PY_Seminar003.task17",
+        "documentation": {}
+    },
+    {
+        "label": "unique_nums",
+        "kind": 5,
+        "importPath": "PY_Seminar003.task17",
+        "description": "PY_Seminar003.task17",
+        "peekOfCode": "unique_nums = set(nums)\n# определяем размер(количество элементов) множества\ncount = len(unique_nums)\n# выводим результат\nprint(\"Количество уникальных элементов:\", count)\nprint(\"Список уникальных элементов:\", *unique_nums)",
+        "detail": "PY_Seminar003.task17",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "PY_Seminar003.task17",
+        "description": "PY_Seminar003.task17",
+        "peekOfCode": "count = len(unique_nums)\n# выводим результат\nprint(\"Количество уникальных элементов:\", count)\nprint(\"Список уникальных элементов:\", *unique_nums)",
+        "detail": "PY_Seminar003.task17",
+        "documentation": {}
+    },
+    {
+        "label": "seq",
+        "kind": 5,
+        "importPath": "PY_Seminar003.task19",
+        "description": "PY_Seminar003.task19",
+        "peekOfCode": "seq = [1, 2, 3, 4, 5]  # исходная последовательность\nk = 3  # количество элементов, на которое необходимо сдвинуть\n# В этом коде мы используем срезы списка для выполнения циклического сдвига.\n# Сначала мы вычисляем остаток от деления k на длину списка seq с помощью оператора %.\n# Это позволяет нам сделать k сдвигов, если k меньше длины списка seq, или выполнить k % len(seq) сдвигов, \n# если k больше или равно длине списка seq.\n# Затем мы используем два среза списка: первый срез содержит последние k % len(seq) элементов списка, \n# а второй срез содержит все элементы списка, кроме последних k % len(seq) элементов. Мы объединяем эти два среза,\n# чтобы получить список, сдвинутый на k элементов вправ\nseq = seq[-k % len(seq):] + seq[:-k % len(seq)]",
+        "detail": "PY_Seminar003.task19",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "PY_Seminar003.task19",
+        "description": "PY_Seminar003.task19",
+        "peekOfCode": "k = 3  # количество элементов, на которое необходимо сдвинуть\n# В этом коде мы используем срезы списка для выполнения циклического сдвига.\n# Сначала мы вычисляем остаток от деления k на длину списка seq с помощью оператора %.\n# Это позволяет нам сделать k сдвигов, если k меньше длины списка seq, или выполнить k % len(seq) сдвигов, \n# если k больше или равно длине списка seq.\n# Затем мы используем два среза списка: первый срез содержит последние k % len(seq) элементов списка, \n# а второй срез содержит все элементы списка, кроме последних k % len(seq) элементов. Мы объединяем эти два среза,\n# чтобы получить список, сдвинутый на k элементов вправ\nseq = seq[-k % len(seq):] + seq[:-k % len(seq)]\nprint(seq)  # выводим результат",
+        "detail": "PY_Seminar003.task19",
+        "documentation": {}
+    },
+    {
+        "label": "seq",
+        "kind": 5,
+        "importPath": "PY_Seminar003.task19",
+        "description": "PY_Seminar003.task19",
+        "peekOfCode": "seq = seq[-k % len(seq):] + seq[:-k % len(seq)]\nprint(seq)  # выводим результат",
+        "detail": "PY_Seminar003.task19",
+        "documentation": {}
+    },
+    {
+        "label": "my_dict",
+        "kind": 5,
+        "importPath": "PY_Seminar003.task21",
+        "description": "PY_Seminar003.task21",
+        "peekOfCode": "my_dict = {\"V\": \"S001\", \"V\": \"S002\", \"VI\": \"S001\", \"VI\": \"S005\", \"VII\": \"S005\", \"V\": \"S009\", \"VIII\": \"S007\"}\n# создаем список, в котором будем хранить уникальные значения из словаря\nunique_values = []\n# Проходим по каждому значению в словаре\nfor value in my_dict.values():\n    # Проверяем, не содержится ли значение в списке уникальных значений\n    if value not in unique_values:\n        # Если нет, то добавляем значение в список\n        unique_values.append(value)\n# Выводим список уникальных значений",
+        "detail": "PY_Seminar003.task21",
+        "documentation": {}
+    },
+    {
+        "label": "unique_values",
+        "kind": 5,
+        "importPath": "PY_Seminar003.task21",
+        "description": "PY_Seminar003.task21",
+        "peekOfCode": "unique_values = []\n# Проходим по каждому значению в словаре\nfor value in my_dict.values():\n    # Проверяем, не содержится ли значение в списке уникальных значений\n    if value not in unique_values:\n        # Если нет, то добавляем значение в список\n        unique_values.append(value)\n# Выводим список уникальных значений\nprint(unique_values)",
+        "detail": "PY_Seminar003.task21",
+        "documentation": {}
+    },
+    {
+        "label": "arr_input",
+        "kind": 5,
+        "importPath": "PY_Seminar003.task23",
+        "description": "PY_Seminar003.task23",
+        "peekOfCode": "arr_input = input(\"Введите элементы массива через запятую: \")\n# разбиваем ввод по запятой и конвертируем каждый элемент в целое число\narr = list(map(int, arr_input.split(\",\")))\ncount = 0  # счетчик\nfor i in range(1, len(arr)):\n    if arr[i] > arr[i-1]:\n        print(arr[i-1],\"<\",arr[i])\n        count += 1\nprint(\"Количество элементов массива, больших предыдущего:\", count)",
+        "detail": "PY_Seminar003.task23",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "PY_Seminar003.task23",
+        "description": "PY_Seminar003.task23",
+        "peekOfCode": "arr = list(map(int, arr_input.split(\",\")))\ncount = 0  # счетчик\nfor i in range(1, len(arr)):\n    if arr[i] > arr[i-1]:\n        print(arr[i-1],\"<\",arr[i])\n        count += 1\nprint(\"Количество элементов массива, больших предыдущего:\", count)",
+        "detail": "PY_Seminar003.task23",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "PY_Seminar003.task23",
+        "description": "PY_Seminar003.task23",
+        "peekOfCode": "count = 0  # счетчик\nfor i in range(1, len(arr)):\n    if arr[i] > arr[i-1]:\n        print(arr[i-1],\"<\",arr[i])\n        count += 1\nprint(\"Количество элементов массива, больших предыдущего:\", count)",
+        "detail": "PY_Seminar003.task23",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 5,
+        "importPath": "PY_Seminar004.task25",
+        "description": "PY_Seminar004.task25",
+        "peekOfCode": "string = input(\"Введите строку: \") # вводим стороку\nfreq = {} # создаем словарь, где ключами будут слова, а так как ключи могут быть только уникальными, то повторов слов не будет,\n# а значением - будет частота встречания слова\nresult = [] # список, который будет выводиться в качестве результата\nfor char in string:\n    freq[char] = freq.get(char, 0) + 1\n    result.append(f\"{char}_{freq[char]}\")\nprint(\" \".join(result))",
+        "detail": "PY_Seminar004.task25",
+        "documentation": {}
+    },
+    {
+        "label": "freq",
+        "kind": 5,
+        "importPath": "PY_Seminar004.task25",
+        "description": "PY_Seminar004.task25",
+        "peekOfCode": "freq = {} # создаем словарь, где ключами будут слова, а так как ключи могут быть только уникальными, то повторов слов не будет,\n# а значением - будет частота встречания слова\nresult = [] # список, который будет выводиться в качестве результата\nfor char in string:\n    freq[char] = freq.get(char, 0) + 1\n    result.append(f\"{char}_{freq[char]}\")\nprint(\" \".join(result))",
+        "detail": "PY_Seminar004.task25",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "PY_Seminar004.task25",
+        "description": "PY_Seminar004.task25",
+        "peekOfCode": "result = [] # список, который будет выводиться в качестве результата\nfor char in string:\n    freq[char] = freq.get(char, 0) + 1\n    result.append(f\"{char}_{freq[char]}\")\nprint(\" \".join(result))",
+        "detail": "PY_Seminar004.task25",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "PY_Seminar004.task27",
+        "description": "PY_Seminar004.task27",
+        "peekOfCode": "text = input(\"Введите текст: \")  # Запросить ввод текста с консоли\n# Разделить текст на слова, привести слова к нижнему регистру и подсчитать уникальные слова\nunique_words = set(word.lower() for word in text.split())\n# Вывести количество уникальных слов\nprint(\"Количество уникальных слов в тексте:\", len(unique_words))",
+        "detail": "PY_Seminar004.task27",
+        "documentation": {}
+    },
+    {
+        "label": "unique_words",
+        "kind": 5,
+        "importPath": "PY_Seminar004.task27",
+        "description": "PY_Seminar004.task27",
+        "peekOfCode": "unique_words = set(word.lower() for word in text.split())\n# Вывести количество уникальных слов\nprint(\"Количество уникальных слов в тексте:\", len(unique_words))",
+        "detail": "PY_Seminar004.task27",
+        "documentation": {}
+    },
+    {
+        "label": "sequence",
+        "kind": 5,
+        "importPath": "PY_Seminar004.task29",
+        "description": "PY_Seminar004.task29",
+        "peekOfCode": "sequence = [5, 3, 88, 2, 9, 0, 4, 7, 100]\nmax_element = 0\nfor element in sequence:\n    max_element = max_element if max_element > element else element\n    if element == 0:\n        break\nprint(max_element)",
+        "detail": "PY_Seminar004.task29",
+        "documentation": {}
+    },
+    {
+        "label": "max_element",
+        "kind": 5,
+        "importPath": "PY_Seminar004.task29",
+        "description": "PY_Seminar004.task29",
+        "peekOfCode": "max_element = 0\nfor element in sequence:\n    max_element = max_element if max_element > element else element\n    if element == 0:\n        break\nprint(max_element)",
+        "detail": "PY_Seminar004.task29",
+        "documentation": {}
+    },
+    {
+        "label": "fibonacci",
+        "kind": 2,
+        "importPath": "PY_Seminar005.task31",
+        "description": "PY_Seminar005.task31",
+        "peekOfCode": "def fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\nn = int(input(\"Введите порядковый номер числа Фибоначи: \"))-1\nprint(fibonacci(n))",
+        "detail": "PY_Seminar005.task31",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "PY_Seminar005.task31",
+        "description": "PY_Seminar005.task31",
+        "peekOfCode": "n = int(input(\"Введите порядковый номер числа Фибоначи: \"))-1\nprint(fibonacci(n))",
+        "detail": "PY_Seminar005.task31",
+        "documentation": {}
+    },
+    {
+        "label": "length",
+        "kind": 5,
+        "importPath": "PY_Seminar005.task33",
+        "description": "PY_Seminar005.task33",
+        "peekOfCode": "length = int(input(\"Введите количество оценок Васи: \"))\n# Используем генератор списка для создания списка со случайными числами\nactual_evaluation = [random.randint(1, 5) for i in range(length)]\nprint(\"Вася получил следующие оценки:\", actual_evaluation)\n# Поиск максимального значения\nmax_value = max(actual_evaluation)\nprint(\"Максимальное значение:\", max_value)\n# Поиск минимального значения\nmin_value = min(actual_evaluation)\nprint(\"Минимальное значение:\", min_value)",
+        "detail": "PY_Seminar005.task33",
+        "documentation": {}
+    },
+    {
+        "label": "actual_evaluation",
+        "kind": 5,
+        "importPath": "PY_Seminar005.task33",
+        "description": "PY_Seminar005.task33",
+        "peekOfCode": "actual_evaluation = [random.randint(1, 5) for i in range(length)]\nprint(\"Вася получил следующие оценки:\", actual_evaluation)\n# Поиск максимального значения\nmax_value = max(actual_evaluation)\nprint(\"Максимальное значение:\", max_value)\n# Поиск минимального значения\nmin_value = min(actual_evaluation)\nprint(\"Минимальное значение:\", min_value)\n# Замена всех максимальных значений минимальным значением\nmax_indices = [i for i, x in enumerate(actual_evaluation) if x == max_value]",
+        "detail": "PY_Seminar005.task33",
+        "documentation": {}
+    },
+    {
+        "label": "max_value",
+        "kind": 5,
+        "importPath": "PY_Seminar005.task33",
+        "description": "PY_Seminar005.task33",
+        "peekOfCode": "max_value = max(actual_evaluation)\nprint(\"Максимальное значение:\", max_value)\n# Поиск минимального значения\nmin_value = min(actual_evaluation)\nprint(\"Минимальное значение:\", min_value)\n# Замена всех максимальных значений минимальным значением\nmax_indices = [i for i, x in enumerate(actual_evaluation) if x == max_value]\nfor index in max_indices:\n    actual_evaluation[index] = min_value\nprint(\"Измененный список оценок Васи:\", actual_evaluation)",
+        "detail": "PY_Seminar005.task33",
+        "documentation": {}
+    },
+    {
+        "label": "min_value",
+        "kind": 5,
+        "importPath": "PY_Seminar005.task33",
+        "description": "PY_Seminar005.task33",
+        "peekOfCode": "min_value = min(actual_evaluation)\nprint(\"Минимальное значение:\", min_value)\n# Замена всех максимальных значений минимальным значением\nmax_indices = [i for i, x in enumerate(actual_evaluation) if x == max_value]\nfor index in max_indices:\n    actual_evaluation[index] = min_value\nprint(\"Измененный список оценок Васи:\", actual_evaluation)",
+        "detail": "PY_Seminar005.task33",
+        "documentation": {}
+    },
+    {
+        "label": "max_indices",
+        "kind": 5,
+        "importPath": "PY_Seminar005.task33",
+        "description": "PY_Seminar005.task33",
+        "peekOfCode": "max_indices = [i for i, x in enumerate(actual_evaluation) if x == max_value]\nfor index in max_indices:\n    actual_evaluation[index] = min_value\nprint(\"Измененный список оценок Васи:\", actual_evaluation)",
+        "detail": "PY_Seminar005.task33",
+        "documentation": {}
+    },
+    {
+        "label": "is_prime",
+        "kind": 2,
+        "importPath": "PY_Seminar005.task35",
+        "description": "PY_Seminar005.task35",
+        "peekOfCode": "def is_prime(num):\n    if num <= 1:\n        return False\n    for i in range(2, num):\n        if num % i == 0:\n            return False\n    return True\nnum = int(input(\"Введите число для проверки: \"))\nif is_prime(num):\n    print(f\"{num} является простым числом\")",
+        "detail": "PY_Seminar005.task35",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "PY_Seminar005.task35",
+        "description": "PY_Seminar005.task35",
+        "peekOfCode": "num = int(input(\"Введите число для проверки: \"))\nif is_prime(num):\n    print(f\"{num} является простым числом\")\nelse:\n    print(f\"{num} не является простым числом\")",
+        "detail": "PY_Seminar005.task35",
+        "documentation": {}
+    },
+    {
+        "label": "print_reverse_sequence",
+        "kind": 2,
+        "importPath": "PY_Seminar005.task37",
+        "description": "PY_Seminar005.task37",
+        "peekOfCode": "def print_reverse_sequence(n):\n    if n == 0:\n        return\n    element = int(input(\"ввод:\"))\n    print_reverse_sequence(n-1)\n    print(\"реверс:\",element)\nn = int(input(\"Введите число N:\"))\nprint_reverse_sequence(n)",
+        "detail": "PY_Seminar005.task37",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "PY_Seminar005.task37",
+        "description": "PY_Seminar005.task37",
+        "peekOfCode": "n = int(input(\"Введите число N:\"))\nprint_reverse_sequence(n)",
+        "detail": "PY_Seminar005.task37",
+        "documentation": {}
+    },
+    {
+        "label": "length1",
+        "kind": 5,
+        "importPath": "PY_Seminar006.task39",
+        "description": "PY_Seminar006.task39",
+        "peekOfCode": "length1 = int(input(\"Введите длину массива №1: \"))\nlength2 = int(input(\"Введите длину массива №2: \"))\n# Генерировать два массива случайных чисел длиной length\narray1 = [random.randint(0, 10) for i in range(length1)]\narray2 = [random.randint(0, 10) for i in range(length2)]\n# Вывести массивы на консоль\nprint(\"Первый массив:\", array1)\nprint(\"Второй массив:\", array2)\n# Вывести элементы первого массива, которых нет во втором массиве\nunique_elements = []",
+        "detail": "PY_Seminar006.task39",
+        "documentation": {}
+    },
+    {
+        "label": "length2",
+        "kind": 5,
+        "importPath": "PY_Seminar006.task39",
+        "description": "PY_Seminar006.task39",
+        "peekOfCode": "length2 = int(input(\"Введите длину массива №2: \"))\n# Генерировать два массива случайных чисел длиной length\narray1 = [random.randint(0, 10) for i in range(length1)]\narray2 = [random.randint(0, 10) for i in range(length2)]\n# Вывести массивы на консоль\nprint(\"Первый массив:\", array1)\nprint(\"Второй массив:\", array2)\n# Вывести элементы первого массива, которых нет во втором массиве\nunique_elements = []\narray2_set = set(array2)",
+        "detail": "PY_Seminar006.task39",
+        "documentation": {}
+    },
+    {
+        "label": "array1",
+        "kind": 5,
+        "importPath": "PY_Seminar006.task39",
+        "description": "PY_Seminar006.task39",
+        "peekOfCode": "array1 = [random.randint(0, 10) for i in range(length1)]\narray2 = [random.randint(0, 10) for i in range(length2)]\n# Вывести массивы на консоль\nprint(\"Первый массив:\", array1)\nprint(\"Второй массив:\", array2)\n# Вывести элементы первого массива, которых нет во втором массиве\nunique_elements = []\narray2_set = set(array2)\nfor x in array1:\n    if x not in array2_set and x not in unique_elements:",
+        "detail": "PY_Seminar006.task39",
+        "documentation": {}
+    },
+    {
+        "label": "array2",
+        "kind": 5,
+        "importPath": "PY_Seminar006.task39",
+        "description": "PY_Seminar006.task39",
+        "peekOfCode": "array2 = [random.randint(0, 10) for i in range(length2)]\n# Вывести массивы на консоль\nprint(\"Первый массив:\", array1)\nprint(\"Второй массив:\", array2)\n# Вывести элементы первого массива, которых нет во втором массиве\nunique_elements = []\narray2_set = set(array2)\nfor x in array1:\n    if x not in array2_set and x not in unique_elements:\n        unique_elements.append(x)",
+        "detail": "PY_Seminar006.task39",
+        "documentation": {}
+    },
+    {
+        "label": "unique_elements",
+        "kind": 5,
+        "importPath": "PY_Seminar006.task39",
+        "description": "PY_Seminar006.task39",
+        "peekOfCode": "unique_elements = []\narray2_set = set(array2)\nfor x in array1:\n    if x not in array2_set and x not in unique_elements:\n        unique_elements.append(x)\nprint(\"Элементы первого массива, которых нет во втором массиве:\", unique_elements)",
+        "detail": "PY_Seminar006.task39",
+        "documentation": {}
+    },
+    {
+        "label": "array2_set",
+        "kind": 5,
+        "importPath": "PY_Seminar006.task39",
+        "description": "PY_Seminar006.task39",
+        "peekOfCode": "array2_set = set(array2)\nfor x in array1:\n    if x not in array2_set and x not in unique_elements:\n        unique_elements.append(x)\nprint(\"Элементы первого массива, которых нет во втором массиве:\", unique_elements)",
+        "detail": "PY_Seminar006.task39",
+        "documentation": {}
+    },
+    {
+        "label": "length",
+        "kind": 5,
+        "importPath": "PY_Seminar006.task41",
+        "description": "PY_Seminar006.task41",
+        "peekOfCode": "length = int(input(\"Введите длину массива №1: \"))\narray = [random.randint(0, 10) for _ in range(length)]\nprint(\"Массив:\", array)\ncount = sum(1 for i in range(1, length-1) if array[i-1] < array[i] and array[i+1] < array[i])\nprint(\"Количество троек, у которых два соседних элемента меньше данного:\", count)",
+        "detail": "PY_Seminar006.task41",
+        "documentation": {}
+    },
+    {
+        "label": "array",
+        "kind": 5,
+        "importPath": "PY_Seminar006.task41",
+        "description": "PY_Seminar006.task41",
+        "peekOfCode": "array = [random.randint(0, 10) for _ in range(length)]\nprint(\"Массив:\", array)\ncount = sum(1 for i in range(1, length-1) if array[i-1] < array[i] and array[i+1] < array[i])\nprint(\"Количество троек, у которых два соседних элемента меньше данного:\", count)",
+        "detail": "PY_Seminar006.task41",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "PY_Seminar006.task41",
+        "description": "PY_Seminar006.task41",
+        "peekOfCode": "count = sum(1 for i in range(1, length-1) if array[i-1] < array[i] and array[i+1] < array[i])\nprint(\"Количество троек, у которых два соседних элемента меньше данного:\", count)",
+        "detail": "PY_Seminar006.task41",
+        "documentation": {}
+    },
+    {
+        "label": "count_pairs",
+        "kind": 2,
+        "importPath": "PY_Seminar006.task43",
+        "description": "PY_Seminar006.task43",
+        "peekOfCode": "def count_pairs(lst):\n    if len(lst) < 2:\n        return 0\n    else:\n        first = lst[0]\n        rest = lst[1:]\n        count = rest.count(first)\n        return count + count_pairs(rest)\nimport random\nlength = int(input(\"Введите длину списка: \"))",
+        "detail": "PY_Seminar006.task43",
+        "documentation": {}
+    },
+    {
+        "label": "length",
+        "kind": 5,
+        "importPath": "PY_Seminar006.task43",
+        "description": "PY_Seminar006.task43",
+        "peekOfCode": "length = int(input(\"Введите длину списка: \"))\nlst = [random.randint(0, 10) for _ in range(length)]\nprint(\"Сгенерированный список:\", lst)\ncount = count_pairs(lst)\nprint(count)",
+        "detail": "PY_Seminar006.task43",
+        "documentation": {}
+    },
+    {
+        "label": "lst",
+        "kind": 5,
+        "importPath": "PY_Seminar006.task43",
+        "description": "PY_Seminar006.task43",
+        "peekOfCode": "lst = [random.randint(0, 10) for _ in range(length)]\nprint(\"Сгенерированный список:\", lst)\ncount = count_pairs(lst)\nprint(count)",
+        "detail": "PY_Seminar006.task43",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "PY_Seminar006.task43",
+        "description": "PY_Seminar006.task43",
+        "peekOfCode": "count = count_pairs(lst)\nprint(count)",
+        "detail": "PY_Seminar006.task43",
+        "documentation": {}
+    },
+    {
+        "label": "sum_of_divisors",
+        "kind": 2,
+        "importPath": "PY_Seminar006.task45",
+        "description": "PY_Seminar006.task45",
+        "peekOfCode": "def sum_of_divisors(n):\n    # Функция для нахождения суммы делителей числа n\n    divisors_sum = 1\n    for i in range(2, int(n/2)+1):\n        if n % i == 0:\n            divisors_sum += i\n    return divisors_sum\nk = int(input(\"Введите число: \"))\nfound_pairs = set()\nfor i in range(1, k+1):",
+        "detail": "PY_Seminar006.task45",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "PY_Seminar006.task45",
+        "description": "PY_Seminar006.task45",
+        "peekOfCode": "k = int(input(\"Введите число: \"))\nfound_pairs = set()\nfor i in range(1, k+1):\n    x = sum_of_divisors(i)\n    if x > i and sum_of_divisors(x) == i:\n        found_pairs.add((i, x))\nif len(found_pairs) == 0:\n    print(\"Дружественные числа не найдены.\")\nelse:\n    print(\"Дружественные числа:\")",
+        "detail": "PY_Seminar006.task45",
+        "documentation": {}
+    },
+    {
+        "label": "found_pairs",
+        "kind": 5,
+        "importPath": "PY_Seminar006.task45",
+        "description": "PY_Seminar006.task45",
+        "peekOfCode": "found_pairs = set()\nfor i in range(1, k+1):\n    x = sum_of_divisors(i)\n    if x > i and sum_of_divisors(x) == i:\n        found_pairs.add((i, x))\nif len(found_pairs) == 0:\n    print(\"Дружественные числа не найдены.\")\nelse:\n    print(\"Дружественные числа:\")\n    for pair in found_pairs:",
+        "detail": "PY_Seminar006.task45",
+        "documentation": {}
+    },
+    {
+        "label": "values",
+        "kind": 5,
+        "importPath": "PY_Seminar007.task47",
+        "description": "PY_Seminar007.task47",
+        "peekOfCode": "values = [1, 23, 42, 'asdfg']\n# Лямбда-выражение, которое возвращает значение без преобразований\ntransformation = lambda x: x\n# Применяем лямбда-выражение к списку значений\ntransformed_values = list(map(transformation, values))\n# Проверяем, равны ли исходный список и преобразованный список\nif values == transformed_values:\n    print('ok')\nelse:\n    print('fail')",
+        "detail": "PY_Seminar007.task47",
+        "documentation": {}
+    },
+    {
+        "label": "transformation",
+        "kind": 5,
+        "importPath": "PY_Seminar007.task47",
+        "description": "PY_Seminar007.task47",
+        "peekOfCode": "transformation = lambda x: x\n# Применяем лямбда-выражение к списку значений\ntransformed_values = list(map(transformation, values))\n# Проверяем, равны ли исходный список и преобразованный список\nif values == transformed_values:\n    print('ok')\nelse:\n    print('fail')",
+        "detail": "PY_Seminar007.task47",
+        "documentation": {}
+    },
+    {
+        "label": "transformed_values",
+        "kind": 5,
+        "importPath": "PY_Seminar007.task47",
+        "description": "PY_Seminar007.task47",
+        "peekOfCode": "transformed_values = list(map(transformation, values))\n# Проверяем, равны ли исходный список и преобразованный список\nif values == transformed_values:\n    print('ok')\nelse:\n    print('fail')",
+        "detail": "PY_Seminar007.task47",
+        "documentation": {}
+    },
+    {
+        "label": "find_farthest_orbit",
+        "kind": 2,
+        "importPath": "PY_Seminar007.task49",
+        "description": "PY_Seminar007.task49",
+        "peekOfCode": "def find_farthest_orbit(list_of_orbits):\n    # Фильтруем орбиты с одинаковыми полуосями\n    filtered_orbits = filter(lambda orbit: orbit[0] != orbit[1], list_of_orbits)\n    # Вычисляем площади всех орбит и выбираем орбиту с наибольшей площадью\n    farthest_orbit = max(filtered_orbits, key=lambda orbit: orbit[0] * orbit[1])\n    return farthest_orbit\norbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]\nresult = find_farthest_orbit(orbits)\nprint(*result)",
+        "detail": "PY_Seminar007.task49",
+        "documentation": {}
+    },
+    {
+        "label": "orbits",
+        "kind": 5,
+        "importPath": "PY_Seminar007.task49",
+        "description": "PY_Seminar007.task49",
+        "peekOfCode": "orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]\nresult = find_farthest_orbit(orbits)\nprint(*result)",
+        "detail": "PY_Seminar007.task49",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "PY_Seminar007.task49",
+        "description": "PY_Seminar007.task49",
+        "peekOfCode": "result = find_farthest_orbit(orbits)\nprint(*result)",
+        "detail": "PY_Seminar007.task49",
+        "documentation": {}
+    },
+    {
+        "label": "same_by",
+        "kind": 2,
+        "importPath": "PY_Seminar007.task51",
+        "description": "PY_Seminar007.task51",
+        "peekOfCode": "def same_by(characteristic, objects):\n    # Создаем множество для хранения уникальных значений характеристики\n    unique_values = set(characteristic(obj) for obj in objects)\n    # Если множество содержит только одно значение, значит все объекты имеют одинаковую характеристику\n    return len(unique_values) == 1\nvalues = [0, 2, 10, 6]\nif same_by(lambda x: x % 2, values):\n    print('same')\nelse:\n    print('different')",
+        "detail": "PY_Seminar007.task51",
+        "documentation": {}
+    },
+    {
+        "label": "values",
+        "kind": 5,
+        "importPath": "PY_Seminar007.task51",
+        "description": "PY_Seminar007.task51",
+        "peekOfCode": "values = [0, 2, 10, 6]\nif same_by(lambda x: x % 2, values):\n    print('same')\nelse:\n    print('different')",
+        "detail": "PY_Seminar007.task51",
+        "documentation": {}
+    }
+]
